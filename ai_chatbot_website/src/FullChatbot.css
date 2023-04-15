@@ -1,0 +1,126 @@
+.canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .chatbot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Updated this line */
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 5px;
+    width: 400px;
+    height: 700px;
+    box-sizing: border-box;
+  }
+  
+  .chatbot-messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow-y: auto;
+    max-height: 500px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .chatbot-message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
+    max-width: 70%;
+  }
+  
+  .message-text {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    word-wrap: break-word;
+  }
+  
+  .message-time {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 0.25rem;
+  }
+  
+  .chatbot-input {
+    display: flex;
+    width: 100%;
+  }
+  
+  .chatbot-input input {
+    flex-grow: 1;
+    border-radius: 5px 0 0 5px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .chatbot-input button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .chatbot-input button:hover {
+    background-color: #0056b3;
+  }
+/* Other CSS rules remain the same, add the following new rules */
+
+.chatbot-input-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+.bot {
+    /*align-items: flex-start;*/
+    align-self: flex-start;
+  }
+
+  .user {
+    align-items: flex-end;
+  }
+  
+  .message-text {
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    word-wrap: break-word;
+  }
+  
+  .bot .message-text {
+    background-color: #eee;
+    color: #333;
+  }
+  
+  .user .message-text {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .bot .message-time {
+    align-self: flex-start;
+  }
+  
+  .user .message-time {
+    align-self: flex-end;
+  }
+    
