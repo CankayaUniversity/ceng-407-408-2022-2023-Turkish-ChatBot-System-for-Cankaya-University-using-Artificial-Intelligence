@@ -1,15 +1,4 @@
-.canvas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
+
   .chatbot-container {
     display: flex;
     flex-direction: column;
@@ -44,6 +33,14 @@
     max-width: 70%;
   }
   
+  .ChatbotContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
   .message-text {
     background-color: #007bff;
     color: white;
@@ -123,4 +120,25 @@
   .user .message-time {
     align-self: flex-end;
   }
-    
+  
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .status-text {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .status-text.online {
+    color: green;
+  }
+  
+  .status-text.offline {
+    color: red;
+  }
+  
+  
