@@ -1,0 +1,30 @@
+Staj dersleri CENG 200 ve CENG 300 dersleridir.
+CENG 300 ön koşulu CENG 200 dersidir.
+CENG 200 ön koşulu CENG 114 dersidir. 
+CENG 200 stajı 2.sınıfın sonunda yapılır. CENG 300 stajı 3. Sınıfın sonunda yapılır. 
+Staj yapılacak olan kurumda bilgisayar mühendisi çalışıyor olmalıdır ve amiriniz bir mühendis olmalıdır.
+Staj yapmadan önce sisteme kayıt olmalı ve staj kabul belgenizi firmaya imzalatıp teslim etmelisiniz.
+Staj süreleri ardışık 20 iş günüdür.
+Her gün 8 saat çalışmak zorunludur. 
+Haftasonu ve ulusal bayramlar, tatiller staj günlerine dahil edilemez.
+Sağlık raporunun olduğu günler staj iş günü olarak kabul edilmez.
+Stajlar bahar dönemi bittikten ve bahar dönemi olan son final sınav tarihinden sonra başlar.
+Staj Sigortası Üniversitemiz tarafından yapılmaktadır.
+Yaz okuluna katılmayı düşünen öğrenciler, yaz okuluyla çakışmayacak bir tarih aralığında staj yapmalıdır.
+Staj, yaz okulundan önce ve sonra olacak şekilde bölünemez.
+Internee Self Evaluation formunu öğrenci doldurur.
+Staj sırasında bütünleme sınavına girilebilir ve staj günü 1 gün uzar.
+İki staj aynı dönemde yapılamaz.
+Stajlar herhangi bir iş gününde başlayabilir.
+Kurumda yönetimsel pozisyonda bir akrabanız varsa o kurumda staj yapamazsınız.
+Grading Criteria formunu staj koordinatörü doldurur.
+Stajınızın başladığı hafta staj amirinizin iletişim bilgilerini IIS’ e girmelisiniz.
+Denetlemeler telefonla veya şirkete gelinerek yapılmak üzere iki farklı şekilde gerçekleştirilebilir.
+Aynı kurumun aynı bölümünde tekrar staj yapamazsınız.
+Öğrenci değerlendirme formuna her bir gününüzü özetlemeli ve staj amirinize imzalatıp mühürletmelisiniz.
+Internship Form and Journal belgesini şirket doldurur.
+Staj sonunda rapor ve 3 form (linkler web sitesinde yer almakta) teslim edilmelidir.
+Staj raporunu önce “webonline.cankaya.edu.tr” yüklenmeli sonra bölüme teslim edilmelidir.
+
+
+
