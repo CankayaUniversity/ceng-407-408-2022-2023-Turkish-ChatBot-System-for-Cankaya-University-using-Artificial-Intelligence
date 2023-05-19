@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Set up GPT-3
-openai.api_key = "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"
+openai.api_key = "SECRET"
 
 # Set up BERT
 tokenizer = AutoTokenizer.from_pretrained("savasy/bert-base-turkish-squad")
@@ -34,7 +34,7 @@ def get_gpt3_response():
     print(message)
     try:
         response = openai.Completion.create(
-          model="davinci:ft-maryuzun-2023-03-15-00-59-45",
+          model="SECRET",
           prompt=message,
           temperature=0,
           max_tokens=120,
