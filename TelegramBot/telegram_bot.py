@@ -6,7 +6,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext, CallbackQueryHandler
 
 # Set your bot token here
-BOT_TOKEN = "6245489063:AAHPoHlZ58TcF8UA4X3tev5HZHuFBqIwb5A"
+BOT_TOKEN = "Set your bot token here"
 BACKEND_URL = "http://localhost:5000"  # Replace with your backend URL if needed
 
 LOGIN_FEATURE = 0 # Set to 1 to enable login, set to 0 to disable login
