@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Set up GPT-3
-openai.api_key = "SECRET"
+openai.api_key = "SECRET" 
 
 # Set up BERT
 tokenizer = AutoTokenizer.from_pretrained("savasy/bert-base-turkish-squad")
@@ -34,14 +34,15 @@ def get_gpt3_response():
     print(message)
     try:
         response = openai.Completion.create(
-          model="SECRET",
+          model="SECRET", 
           prompt=message,
-          temperature=0,
-          max_tokens=120,
-          top_p=1,
+          temperature=0.0,
+          max_tokens=150,
+          top_p=1.0,
           best_of=3,
-          frequency_penalty=0,
-          presence_penalty=0
+          frequency_penalty=0.0,
+          presence_penalty=0.0,
+          stop=['.']
         )
 
         return jsonify({"text": response.choices[0].text.strip()})

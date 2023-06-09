@@ -1,0 +1,8 @@
+.chatbot-button, .close-button {
+    cursor: pointer;
+  }
+  
+  .close-button {
+    float: right;
+  }
+  

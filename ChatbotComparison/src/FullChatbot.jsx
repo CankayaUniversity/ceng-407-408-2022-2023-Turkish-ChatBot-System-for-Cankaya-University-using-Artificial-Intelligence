@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './FullChatbot.css';
 import axios from 'axios';
 
-const FullChatbot = ({ title, apiUrl }) => {
+const FullChatbot = ({ title, apiUrl, closeChatbot }) => {
   const timestamp = new Date();
   const initialTime = `${timestamp.getHours()}:${timestamp.getMinutes()}`;
 
@@ -14,20 +14,7 @@ const FullChatbot = ({ title, apiUrl }) => {
       isBot: true,
     },
   ]);
-  const [status, setStatus] = useState("Offline");
   const messagesEndRef = useRef(null);
-
-  useEffect(() => {
-    const fetchStatus = async () => {
-      try {
-        const response = await axios.get('/api/status');
-        setStatus(response.data.status);
-      } catch (error) {
-        setStatus("Offline");
-      }
-    };
-    fetchStatus();
-  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -69,28 +56,29 @@ const FullChatbot = ({ title, apiUrl }) => {
     <div className="canvas" style={{ margin: '0 1rem' }}>
       <div className="title-container">
         <h3>{title}</h3>
-        <span className={`status-text ${status.toLowerCase()}`}>{`Status: ${status}`}</span>
+        <img src='src/assets/arrow.svg' width="35" alt='Close chatbot' className='close-button' onClick={closeChatbot} />
       </div>
-      <div className="chatbot-container">
-        <div className="chatbot-messages">
-          {messages.map((message, i) => (
-            <div key={i} className={`chatbot-message ${message.isBot ? 'bot' : 'user'}`}>
-              <div className="message-text">{message.text}</div>
-              <div className="message-time">{message.time}</div>
-            </div>
-          ))}
-          <div ref={messagesEndRef} />
-        </div>
-        <form onSubmit={handleSubmit} className="chatbot-input">
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            placeholder="Type your message here..."
-          />
-          <button type="submit">Send</button>
-        </form>
+      <div className="messages-container">
+        {messages.map((message, index) => (
+          <div
+            key={index}
+            className={`message-container ${message.isBot ? 'bot-message' : 'user-message'}`}
+          >
+            <p className="message-text">{message.text}</p>
+            <span className="message-time">{message.time}</span>
+          </div>
+        ))}
+        <div ref={messagesEndRef} />
       </div>
+      <form className="input-container" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Mesajınızı yazınız..."
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
+        <button type="submit">Gönder</button>
+      </form>
     </div>
   );
 };

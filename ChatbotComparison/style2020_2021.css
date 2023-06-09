@@ -1,0 +1,3844 @@
+@font-face {
+    font-family: Raleway;
+    src: local("Raleway Italic"), local("Raleway-Italic"), url(//fonts.gstatic.com/s/raleway/v12/1Ptsg8zYS_SKggPNyCg4Q4Fv.ttf) format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: local("Raleway Bold Italic"), local("Raleway-BoldItalic"), url(//fonts.gstatic.com/s/raleway/v12/1Ptpg8zYS_SKggPNyCgw9qR_DNCe.ttf) format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: local("Raleway"), local("Raleway-Regular"), url(//fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyCMISg.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: local("Raleway Bold"), local("Raleway-Bold"), url(//fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqhPBQ.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+ï»¿html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    /*font-family: 'Maven Pro', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+}
+
+/*h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1.5em;
+}*/
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+blockquote {
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+pre {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 18.5714px;
+}
+
+
+/* Body Styles */
+body {
+    /*font-family: 'Maven Pro', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    /*background-image: url('img/students.jpg');*/
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+.author {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #999;
+}
+
+.author a {
+    color: #777;
+    text-decoration: none;
+}
+
+.author a:hover {
+    color: blue;
+}
+
+header.dark blockquote {
+    color: #fff;
+}
+
+header.light blockquote {
+    color: #000;
+}
+
+blockquote {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 16px;
+    border-left: 0px;
+    padding: 20px;
+}
+
+blockquote h2 {
+    padding-right: 40px;
+    margin: 0px;
+}
+
+header.dark blockquote a {
+    color: orange;
+    text-decoration: underline;
+}
+
+header.light blockquote a {
+    text-decoration: underline;
+}
+
+header.dark {
+    background-color: #444;
+}
+
+header.light {
+    background-color: #fff;
+}
+
+/* Navigation Styles */
+nav {
+    position: relative;
+    z-index: 999;
+}
+
+header.dark nav {
+    background-color: rgba(255,255,255,0.5);
+}
+
+header.light nav {
+    background-color: #fff;
+}
+
+ul.main-nav {
+    list-style-type: none;
+    padding: 0px;
+    font-size: 0px;
+    max-width: 1140px;
+}
+
+ul.main-nav > li {
+    display: inline-block;
+    padding: 0;
+    padding: 14px;
+}
+
+ul.main-nav > li > a {
+    display: block;
+    padding: 20px 15px;
+    position: relative;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+ul.main-nav > li:hover {
+    text-decoration: none;
+    background-color: #ffed02;
+}
+
+ul.main-nav > li:hover > a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul.main-nav > li ul.sub-menu-lists {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: block;
+    font-size: 15px;
+}
+
+ul.main-nav > li ul.sub-menu-lists > li {
+    padding: 2px 0;
+}
+
+.ic {
+    position: fixed;
+    cursor: pointer;
+    display: inline-block;
+    right: 25px;
+    width: 32px;
+    height: 24px;
+    text-align: center;
+    top: 0px;
+    outline: none;
+}
+
+.ic.close {
+    opacity: 1;
+    font-size: 0px;
+    font-weight: 300;
+    color: black;
+    top: 8px;
+    height: 40px;
+    display: block;
+    outline: none;
+}
+
+.column h2 {
+    color: darkgray;
+}
+
+.column h2:after {
+    background-color: #ffed02;
+    top: 3px;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 0px;
+    position: relative;
+    width: 25%;
+}
+
+.column a {
+    float: none;
+    color: #a7aabb;
+    padding: 2px 5px 2px 5px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.column a:hover {
+    background-color: #ffed02;
+    color: #464857;
+}
+
+/* Menu Icons for Devices*/
+.ic.menu {
+    top: 25px;
+    z-index: 20;
+}
+
+.ic.menu .line {
+    height: 4px;
+    width: 100%;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.ic.menu .line-last-child {
+    margin-bottom: 0px;
+}
+
+.banners-area {
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*TÃ¼rkÃ§e*/
+
+#img-aday {
+    background: url("https://cankaya.edu.tr/img/adayogrenciler.png") no-repeat;
+    background-size: cover;
+}
+
+#img-aday:hover {
+    background: url("https://cankaya.edu.tr/img/adayogrenciler-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-ulus {
+    background: url("https://cankaya.edu.tr/img/uluslararasiogrenciler.png") no-repeat;
+    background-size: cover;
+}
+
+#img-ulus:hover {
+    background: url("https://cankaya.edu.tr/img/uluslararasiogrenciler-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-ogris {
+    background: url("https://cankaya.edu.tr/img/ogrenciisleri.png") no-repeat;
+    background-size: cover;
+}
+
+#img-ogris:hover {
+    background: url("https://cankaya.edu.tr/img/ogrenciisleri-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-bilgi {
+    background: url("https://cankaya.edu.tr/img/ogrencibilgisistemi.png") no-repeat;
+    background-size: cover;
+}
+
+#img-bilgi:hover {
+    background: url("https://cankaya.edu.tr/img/ogrencibilgisistemi-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-akademik {
+    background: url("https://cankaya.edu.tr/img/akademiktakvim.png") no-repeat;
+    background-size: cover;
+}
+
+#img-akademik:hover {
+    background: url("https://cankaya.edu.tr/img/akademiktakvim-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-kalite {
+    background: url("https://cankaya.edu.tr/img/kaliteguvencesistemi.png") no-repeat;
+    background-size: cover;
+}
+
+#img-kalite:hover {
+    background: url("https://cankaya.edu.tr/img/kaliteguvencesistemi-hover.png") no-repeat;
+    background-size: cover;
+}
+
+
+#img-kampus {
+    background: url("https://cankaya.edu.tr/img/kampuste-yasam.png") no-repeat;
+    background-size: cover;
+}
+
+#img-kampus:hover {
+    background: url("https://cankaya.edu.tr/img/kampuste-yasam-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-ogrenci {
+    background: url("https://cankaya.edu.tr/img/album-cankaya.png") no-repeat;
+    background-size: cover;
+}
+
+#img-ogrenci:hover {
+    background: url("https://cankaya.edu.tr/img/album-cankaya-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-basin {
+    background: url("https://cankaya.edu.tr/img/basindabiz.png") no-repeat;
+    background-size: cover;
+}
+
+#img-basin:hover {
+    background: url("https://cankaya.edu.tr/img/basindabiz-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-tanitim {
+    background: url("https://cankaya.edu.tr/img/tanitim.png") no-repeat;
+    background-size: cover;
+}
+
+#img-tanitim:hover {
+    background: url("https://cankaya.edu.tr/img/tanitim-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-video {
+    background: url("https://cankaya.edu.tr/img/video.png") no-repeat;
+    background-size: cover;
+}
+
+#img-video:hover {
+    background: url("https://cankaya.edu.tr/img/video-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-kutuphane {
+    background: url("https://cankaya.edu.tr/img/kutuphane.png") no-repeat;
+    background-size: cover;
+}
+
+#img-kutuphane:hover {
+    background: url("https://cankaya.edu.tr/img/kutuphane-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-yayin {
+    background: url("https://cankaya.edu.tr/img/yayinlar.png") no-repeat;
+    background-size: cover;
+}
+
+#img-yayin:hover {
+    background: url("https://cankaya.edu.tr/img/yayinlar-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-mezun {
+    background: url("https://cankaya.edu.tr/img/mezunlar.png") no-repeat;
+    background-size: cover;
+}
+
+#img-mezun:hover {
+    background: url("https://cankaya.edu.tr/img/mezunlar-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-store {
+    background: url("https://cankaya.edu.tr/img/store.png") no-repeat;
+    background-size: cover;
+}
+
+#img-store:hover {
+    background: url("https://cankaya.edu.tr/img/store-hover.png") no-repeat;
+    background-size: cover;
+}
+
+.img-bolumbox {
+    margin: 5px;
+}
+
+
+/*TÃ¼rkÃ§e end*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*English*/
+
+#img-aday-en {
+    background: url("https://cankaya.edu.tr/img/adayogrenciler-en.png") no-repeat;
+    background-size: cover;
+}
+
+#img-aday-en:hover {
+    background: url("https://cankaya.edu.tr/img/adayogrenciler-en-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-ulus-en {
+    background: url("https://cankaya.edu.tr/img/uluslararasiogrenciler-en.png") no-repeat;
+    background-size: cover;
+}
+
+#img-ulus-en:hover {
+    background: url("https://cankaya.edu.tr/img/uluslararasiogrenciler-en-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-ogris-en {
+    background: url("https://cankaya.edu.tr/img/ogrenciisleri-en.png") no-repeat;
+    background-size: cover;
+}
+
+#img-ogris-en:hover {
+    background: url("https://cankaya.edu.tr/img/ogrenciisleri-en-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-bilgi-en {
+    background: url("https://cankaya.edu.tr/img/ogrencibilgisistemi-en.png") no-repeat;
+    background-size: cover;
+}
+
+#img-bilgi-en:hover {
+    background: url("https://cankaya.edu.tr/img/ogrencibilgisistemi-en-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-akademik-en {
+    background: url("https://cankaya.edu.tr/img/akademiktakvim-en.png") no-repeat;
+    background-size: cover;
+}
+
+#img-akademik-en:hover {
+    background: url("https://cankaya.edu.tr/img/akademiktakvim-en-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-kalite-en {
+    background: url("https://cankaya.edu.tr/img/kaliteguvencesistemi-en.png") no-repeat;
+    background-size: cover;
+}
+
+#img-kalite-en:hover {
+    background: url("https://cankaya.edu.tr/img/kaliteguvencesistemi-en-hover.png") no-repeat;
+    background-size: cover;
+}
+
+
+#img-kampus-en {
+    background: url("https://cankaya.edu.tr/img/kampuste-yasam-en.png") no-repeat;
+    background-size: cover;
+}
+
+#img-kampus-en:hover {
+    background: url("https://cankaya.edu.tr/img/kampuste-yasam-en-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-ogrenci-en {
+    background: url("https://cankaya.edu.tr/img/album-cankaya-en.png") no-repeat;
+    background-size: cover;
+}
+
+#img-ogrenci-en:hover {
+    background: url("https://cankaya.edu.tr/img/album-cankaya-en-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-basin-en {
+    background: url("https://cankaya.edu.tr/img/basindabiz-en.png") no-repeat;
+    background-size: cover;
+}
+
+#img-basin-en:hover {
+    background: url("https://cankaya.edu.tr/img/basindabiz-en-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-tanitim-en {
+    background: url("https://cankaya.edu.tr/img/tanitim-en.png") no-repeat;
+    background-size: cover;
+}
+
+#img-video-en {
+    background: url("https://cankaya.edu.tr/img/video-en.png") no-repeat;
+    background-size: cover;
+}
+
+#img-video-en:hover {
+    background: url("https://cankaya.edu.tr/img/video-en-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-tanitim-en:hover {
+    background: url("https://cankaya.edu.tr/img/tanitim-en-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-kutuphane-en {
+    background: url("https://cankaya.edu.tr/img/kutuphane-en.png") no-repeat;
+    background-size: cover;
+}
+
+#img-kutuphane-en:hover {
+    background: url("https://cankaya.edu.tr/img/kutuphane-en-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-yayin-en {
+    background: url("https://cankaya.edu.tr/img/yayinlar-en.png") no-repeat;
+    background-size: cover;
+}
+
+#img-yayin-en:hover {
+    background: url("https://cankaya.edu.tr/img/yayinlar-en-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-mezun-en {
+    background: url("https://cankaya.edu.tr/img/mezunlar-en.png") no-repeat;
+    background-size: cover;
+}
+
+#img-mezun-en:hover {
+    background: url("https://cankaya.edu.tr/img/mezunlar-en-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#img-store-en {
+    background: url("https://cankaya.edu.tr/img/store-en.png") no-repeat;
+    background-size: cover;
+}
+
+#img-store-en:hover {
+    background: url("https://cankaya.edu.tr/img/store-en-hover.png") no-repeat;
+    background-size: cover;
+}
+
+/*English end*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*nav bar*/
+
+.nav-link {
+    color: #ffed02;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.column h5 {
+    color: darkgray;
+}
+
+.column h5:after {
+    background-color: #ffed02;
+    top: 3px;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 0px;
+    position: relative;
+    width: 25%;
+}
+
+.column a {
+    float: none;
+    color: #a7aabb;
+    padding: 2px 5px 2px 5px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.column a:hover {
+    background-color: #ffed02;
+    color: #464857;
+}
+
+.rounded {
+    height: 90px;
+    padding-left: 120px;
+}
+
+.social {
+    margin-right: 10px;
+    color: #878a9a;
+    font-size: 22px;
+}
+
+a:hover {
+    color: #373a4b;
+    text-decoration: none;
+}
+
+.searchInput:hover, .searchInput:focus {
+    background-color: white;
+    color: black;
+    border: 0;
+    padding-left: 1rem;
+}
+
+.searchBtn {
+    color: #ffed02;
+    text-shadow: 2px 2px 4px #000000;
+    border-color: #ffed02;
+    border-radius: 100px;
+}
+
+.searchBtn:hover {
+    background-color: white;
+    color: black;
+    border-color: dimgray;
+}
+
+.languageBtn {
+    color: #ffed02;
+    text-shadow: 2px 2px 4px #000000;
+    border-color: #ffed02;
+    border-radius: 100px;
+    margin-left: 10px;
+}
+
+.languageBtn:hover {
+    background-color: white;
+    color: black;
+    border-color: dimgray;
+}
+
+#navbar {
+    padding-left: 50px;
+}
+
+/*nav bar end*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*card hover*/
+
+.go-corner {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #4a5056;
+    border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+}
+
+.card1 {
+    display: block;
+    position: relative;
+    background-color: #4a5056;
+    padding: 15px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    color: #ccc;
+    width: 16.66%;
+    text-align: center;
+    padding-top: 45px;
+    border: 1px solid #424242;
+    border-radius: 0;
+}
+
+.card1:hover {
+    background-color: #ffca08;
+    color: #4a5056;
+}
+
+.card1 p {
+    font-weight: bold;
+}
+
+.card2 {
+    display: block;
+    position: relative;
+    background-color: #ffed02;
+    border-radius: 0px;
+    padding: 15px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    color: #909090;
+    width: 16.66%;
+    text-align: center;
+    padding-top: 45px;
+    border: 1px solid #909090;
+}
+
+.card2:hover {
+    background-color: #4a5056;
+    color: #ffed02;
+}
+
+.card2 p {
+    font-weight: bold;
+}
+
+/*card hover end*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*footer*/
+
+.bg-theme {
+    background: #373a4b !important
+}
+
+footer .logo {
+    width: 125px;
+}
+
+footer ul li a {
+    color: #a6a9ba !important;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    color: #ffed00 !important
+}
+
+footer hr {
+    border-top: 1px solid #6191bc
+}
+
+footer h5 {
+    color: #a6a9ba;
+    font-size: 14px;
+}
+
+footer .title {
+    color: #a6a9ba;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.social_footer {
+    margin: auto;
+    float: right;
+}
+
+.bottom-menu {
+    line-height: 30px;
+}
+/*footer end*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*social-menu*/
+
+/*#social-menu {
+    background-color: #373a4b;
+    height: 76px;
+    max-height: 76px;
+}
+
+    #social-menu .row {
+        min-height: 85px;
+    }
+
+    #social-menu .social-area {
+        margin-right: 30px !important;
+    }
+
+        #social-menu .social-area ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: right;
+        }
+
+        #social-menu .social-area li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+            #social-menu .social-area li a {
+                font-size: 20px;
+                color: #878a9a;
+            }
+
+                #social-menu .social-area li a:hover {
+                    color: #fff;
+                }*/
+
+/*social-menu end*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Rounded pill classes for horizontal sides */
+.rounded-pill-left {
+    border-top-left-radius: 50rem !important;
+    border-bottom-left-radius: 50rem !important;
+}
+
+.rounded-pill-right {
+    border-top-right-radius: 50rem !important;
+    border-bottom-right-radius: 50rem !important;
+}
+
+#btn-search {
+    border-width: 3px !important;
+}
+
+#access-bar-1 {
+    padding: 0px 0;
+}
+
+.box {
+    height: 254px;
+    width: 193px;
+    cursor: pointer;
+}
+
+.box .img-top {
+    display: none;
+    position: absolute;
+    z-index: 99;
+}
+
+.box:hover .img-top {
+    display: inline;
+}
+
+.box2 {
+    height: 217px;
+    width: 193px;
+    cursor: pointer;
+}
+
+.box2 .img-top {
+    display: none;
+    position: absolute;
+    z-index: 99;
+}
+
+.box2:hover .img-top {
+    display: inline;
+}
+
+/* Rounded pill classes for horizontal sides end */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*left navbar*/
+
+.mainmenu, .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainmenu li > a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#solmenu > .menu-solmenu-container > ul > li > a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.mainmenu li:hover .submenu {
+    display: block;
+    max-height: 500px;
+}
+
+#menu-solmenu > li:hover > .sub-menu {
+    display: block;
+    max-height: 500px;
+    max-width: 225px;
+}
+
+#menu-solmenu > li:hover > .sub-menu > li:hover > .sub-menu {
+    display: block;
+    max-height: 500px;
+    max-width: 225px;
+}
+
+#menu-solmenu > li:hover > .sub-menu > li:hover > .sub-menu > li:hover > .sub-menu {
+    display: block;
+    max-height: 500px;
+    max-width: 225px;
+}
+
+.submenu a {
+    background-color: #999;
+    padding-left: 10px;
+}
+
+.submenu a:hover {
+    background-color: #666;
+}
+
+.submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+    max-width: 225px;
+}
+
+#solmenu .has-sub .mainmenu {
+    max-width: 225px;
+}
+
+/*left navbar end*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*bolum baslik*/
+
+.bolum-baslik {
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    border-bottom: 3px solid #ffca08;
+    margin: 10px auto;
+    max-width: 630px;
+}
+
+.baslik-alt > a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #373a4b;
+}
+
+.baslik-alt > a:hover {
+    color: #ffca08;
+}
+
+.baslik-alt > span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffca08;
+}
+
+.baslik-alt {
+    font-size: 2em;
+    line-height: 1em;
+    position: relative;
+}
+
+/*.baslik-alt::after {
+        border-bottom: 3px solid #ffca08;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 100%;
+    }*/
+
+/*bolum baslik end*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*min-width*/
+
+@media only screen and (min-width:1267px) {
+    .social-icons {
+        margin: auto;
+        padding-right: 10px;
+    }
+
+    .social-icons-b {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1920px) {
+    .boxSize {
+        width: 9.89vw;
+        height: 13vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:1700px) and (max-width:1919px) {
+    .boxSize {
+        width: 9.9vw;
+        height: 13.07vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:1462px) and (max-width:1699px) {
+    .boxSize {
+        width: 11vw;
+        height: 14.5vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:1358px) and (max-width:1461px) {
+    .boxSize {
+        width: 13vw;
+        height: 17.1vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1357px) {
+    .boxSize {
+        width: 14vw;
+        height: 18.5vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .boxSize2 {
+        width: 142px;
+        height: 160px;
+        cursor: pointer;
+        border: 0;
+        /*width: 7.4vw;
+        height: 8.4vw;
+        overflow: hidden;
+        cursor: pointer;*/
+    }
+
+    .boxSize3 {
+        width: 175px;
+        height: 120px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .position {
+        float: right !important;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (min-width:1185px) {
+    header {
+        height: 95px;
+        padding-left: 120px;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        display: flex !important;
+    }
+}
+
+@media only screen and (min-width:1066px) {
+    .youtube-v1 {
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width:1016px) {
+    #logo {
+        height: 125px;
+        width: 125px;
+        margin: -15px;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .top__right {
+        padding-top: 15px;
+        padding-right: 50px;
+        padding-bottom: 15px;
+        float: right;
+    }
+
+    .top__left {
+        padding-left: 225px;
+        padding-bottom: 10px;
+    }
+
+    .top__left-b {
+        padding-left: 85px;
+        padding-bottom: 0px;
+    }
+
+    ul.main-nav {
+        padding-left: 50px;
+    }
+
+    .main-title__primary {
+        font-size: 28px;
+        font-weight: bold;
+        /*padding-top: 40px;*/
+    }
+
+    .main-title__secondary {
+        font-size: 20px;
+    }
+
+    .page_content {
+        /*margin-bottom: 60px;*/
+        padding: 20px;
+        background-color: #eee;
+    }
+
+    .page_content h3 {
+        font-size: 20px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+    .boxOrtala {
+        margin: 0 auto;
+        max-width: 740px;
+        display: flex;
+    }
+
+    .boxOrtala2 {
+        margin: 0 auto;
+        max-width: 1110px;
+        display: flex;
+    }
+}
+
+@media only screen and (min-width:917px) {
+    header.light ul.main-nav > li > a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width:884px) {
+    .searchInput {
+        background-color: dimgray;
+        color: white;
+        border: 0;
+        border-radius: 50px;
+        width: 300px;
+        height: 49px;
+        padding-left: 1rem;
+    }
+}
+
+@media only screen and (min-width:769px) {
+
+    .ic.menu {
+        display: none;
+    }
+    /* Main Menu for Desktop Devices  */
+    ul.main-nav {
+        display: inline-flex;
+        position: relative;
+    }
+
+    dl, ol, ul {
+        margin-bottom: 0;
+    }
+
+    .sub-menu-block {
+        padding: 15px;
+    }
+
+    /* Sub Menu */
+    ul.main-nav > li > div.sub-menu-block {
+        visibility: hidden;
+        background-color: rgba(39, 41, 53, 0.9);
+        position: absolute;
+        margin-top: 17px;
+        width: 100%;
+        color: #333;
+        left: 0;
+        box-sizing: border-box;
+        z-index: 3;
+        font-size: 16px;
+        /*border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;*/
+        opacity: 0;
+        /*CSS animation applied for sub menu : Slide from Top */
+        -webkit-transition: all 0.4s ease 0s;
+        -o-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+        -webkit-transform: rotateX(90deg);
+        -moz-transform: rotateX(90deg);
+        -ms-transform: rotateX(90deg);
+        transform: rotateX(90deg);
+        -webkit-transform-origin: top center;
+        -ms-transform-origin: top center;
+        transform-origin: top center;
+    }
+
+    ul.main-nav > li:hover > div.sub-menu-block {
+        background-color: #272935e0;
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+    }
+
+    ul.main-nav > li > div.sub-menu-block > * {
+        -webkit-transition-property: opacity;
+        -moz-transition-property: opacity;
+        -o-transition-property: opacity;
+        transition-property: opacity;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration: 0.4s;
+        -o-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        opacity: 0;
+    }
+
+    ul.main-nav > li:hover > div.sub-menu-block > * {
+        opacity: 1;
+    }
+
+    .sub-menu-head {
+        font-size: 17px;
+        font-weight: bold;
+        color: darkgray;
+    }
+
+    .sub-menu-head > a {
+        font-size: 17px;
+        font-weight: bold;
+        color: darkgray;
+    }
+
+    /* List Separator: Outer Border */
+    header.dark ul.main-nav > li > a {
+        /*border-right: 1px solid #bbb;*/
+    }
+
+    .header.light {
+        background-color: transparent;
+    }
+
+    /*header.light ul.main-nav > li > a {
+        font-size: 13px;
+    }*/
+
+
+    /* List Separator: Inner Border */
+    ul.main-nav > li > a:after {
+        display: none;
+    }
+
+    header.dark ul.main-nav > li > a:after {
+        /*background-color: #777;*/
+    }
+
+    header.light ul.main-nav > li > a:after {
+        background-color: #999;
+    }
+
+    /* Drop Down/Up Arrow for Mega Menu */
+    ul.main-nav > li > a.mega-menu > span {
+        display: block;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+
+    ul.main-nav > li:hover > a.mega-menu span:after {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 0px solid transparent;
+        border-bottom: 5px solid #666;
+    }
+
+    .banners-area {
+        border-top: 1px solid #ccc;
+    }
+
+    /*right menu*/
+
+    #rightBtn {
+        width: 90px;
+        height: 90px;
+        background: url("https://cankaya.edu.tr/img/logo_menu.png") no-repeat;
+        background-size: 90px 90px;
+        position: fixed;
+        top: 195px;
+        right: 30px;
+        z-index: 1000;
+        cursor: pointer;
+        border: 0;
+    }
+	
+    #rightNavbar {
+        width: 0px;
+        height: 420px;
+        background-color: #373a4b;
+        line-height: 35px;
+        padding-top: 100px;
+        text-align: right;
+        position: fixed;
+        z-index: 98;
+        top: 174px;
+        right: 0px;
+        transition: 0.5s;
+        overflow-x: hidden;
+    }
+
+    #rightNavbar a {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: bold;
+        padding-right: 30px;
+        transition: 0.5s;
+        text-decoration: none;
+    }
+
+    #rightNavbar a:hover {
+        background-color: #4c4f5e;
+    }
+
+    #rightNavbar .closebtn {
+        display: none;
+    }
+
+    /*right menu end*/
+
+    /* solmenu */
+    #solmenu {
+        padding-right: 0px;
+        padding-left: 0px;
+        background: #373a4b;
+        zoom: 1;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #solmenu .leftTitle {
+        padding-left: 30px;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    #solmenu .sol-menu-baslik a {
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        color: white;
+        font-weight: bold;
+        font-size: 23px;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    #solmenu ul li {
+        float: left;
+        min-height: 1px;
+        line-height: 22px;
+        vertical-align: middle;
+        position: relative;
+    }
+
+    #solmenu ul ul {
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        z-index: 598;
+        width: 100%;
+        transition-duration: 0s;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #solmenu ul ul li {
+        float: none;
+    }
+
+    #solmenu ul ul ul {
+        top: 0px;
+        right: 0;
+    }
+
+    #solmenu ul li:hover > ul {
+        visibility: visible;
+    }
+
+    #solmenu ul ul {
+        top: 0px;
+        left: 100%;
+    }
+
+    #solmenu ul li {
+        float: none;
+    }
+
+    #solmenu ul ul {
+        margin-top: 0px;
+    }
+
+    #solmenu ul ul li {
+        font-weight: normal;
+    }
+
+    #solmenu:before {
+        content: '';
+        display: block;
+    }
+
+    #solmenu:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    #solmenu a {
+        display: block;
+        padding-left: 30px;
+        padding-bottom: 7px;
+        padding-top: 7px;
+        /*color: #9296a5;*/
+        text-decoration: none;
+    }
+
+    #solmenu > ul > li > a {
+        color: #ffffff;
+    }
+
+    #solmenu > ul > li > a:hover {
+        color: #ffffff;
+    }
+
+    #solmenu > ul > li.active a {
+        background: #ffed00;
+        color: #373a4b;
+    }
+
+    #solmenu > ul > li a:hover,
+    #solmenu > ul > li:hover a {
+        background: #ffed00;
+        color: #373a4b;
+    }
+
+    /*    #solmenu li {
+            position: relative;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }*/
+
+    /*#solmenu .has-sub > a:after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f061";
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        margin-top: -10px;
+    }*/
+
+    #solmenu ul ul li.first {
+        -webkit-border-radius: 0 3px 0 0;
+        -moz-border-radius: 0 3px 0 0;
+        border-radius: 0 3px 0 0;
+    }
+
+    #solmenu ul ul li.last {
+        -webkit-border-radius: 0 0 3px 0;
+        -moz-border-radius: 0 0 3px 0;
+        border-radius: 0 0 3px 0;
+        border-bottom: 0;
+    }
+
+    #solmenu ul ul {
+        -webkit-border-radius: 0 3px 3px 0;
+        -moz-border-radius: 0 3px 3px 0;
+        border-radius: 0 3px 3px 0;
+    }
+
+    #solmenu ul ul a {
+        /*        color: #ffffff;*/
+        background: #ffed00;
+        color: #373a4b;
+        font-weight: bold;
+    }
+
+    #solmenu ul ul a:hover {
+        color: #ffffff;
+    }
+
+    #solmenu ul ul li:hover > a {
+        background: #4c4f5e;
+        color: #fff;
+    }
+
+    #solmenu.align-right > ul > li > a {
+        border-right: none;
+    }
+
+    #solmenu.align-right {
+        float: right;
+    }
+
+    #solmenu.align-right li {
+        text-align: right;
+    }
+
+    /*#solmenu.align-right ul li.has-sub > a:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f061";
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        margin-top: -6px;
+    }*/
+
+    #solmenu.align-right ul li.has-sub > a:after {
+        content: none;
+    }
+
+    #solmenu.align-right ul ul {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: 598;
+        width: 100%;
+    }
+
+    #solmenu.align-right ul ul li.first {
+        -webkit-border-radius: 3px 0 0 0;
+        -moz-border-radius: 3px 0 0 0;
+        border-radius: 3px 0 0 0;
+    }
+
+    #solmenu.align-right ul ul li.last {
+        -webkit-border-radius: 0 0 0 3px;
+        -moz-border-radius: 0 0 0 3px;
+        border-radius: 0 0 0 3px;
+    }
+
+    #solmenu.align-right ul ul {
+        -webkit-border-radius: 3px 0 0 3px;
+        -moz-border-radius: 3px 0 0 3px;
+        border-radius: 3px 0 0 3px;
+    }
+
+    #solmenu .closebtn {
+        display: none;
+    }
+    /* Sol-menu End*/
+
+    /*left navbar*/
+
+    #leftNavbar {
+        height: 694px;
+        width: 0px;
+        position: fixed;
+        background-color: #373a4b;
+        line-height: 35px;
+        padding-top: 30px;
+        text-align: left;
+        z-index: 98;
+        top: 174px;
+        left: 0px;
+        /*transition: 0.5s;
+        overflow-x: hidden;*/
+    }
+
+    #leftNavbar .leftTitle {
+        padding-left: 30px;
+        color: white;
+        font-weight: bold;
+        font-size: 21px;
+    }
+
+    #leftNavbar a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        padding-left: 30px;
+        transition: 0.5s;
+        text-decoration: none;
+        padding-bottom: 7px;
+        padding-top: 7px;
+    }
+
+    #leftNavbar a:hover {
+        background-color: #4c4f5e;
+    }
+
+    #leftNavbar .closebtn {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 36px;
+        cursor: pointer;
+    }
+
+    #leftNavbar .closebtn:hover {
+        background-color: transparent;
+    }
+
+    #leftBtn {
+        padding: 7px;
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        top: 185px;
+        left: 30px;
+        z-index: 97;
+        cursor: pointer;
+        border: 0;
+        font-size: 30px;
+        color: rgb(14, 10, 15);
+        background-color: rgb(253, 237, 1);
+        display: block;
+    }
+
+    #leftNavbar .sub-menu {
+        /*        height: 200px;
+                width: 250px;
+                position: fixed;
+                background-color: #feed01;
+                line-height: 35px;
+                padding-top: 30px;
+                text-align: left;
+                z-index: 98;
+                top: 325px;
+                left: 290px;
+                transition: 0.5s;
+                overflow-x: hidden;*/
+    }
+
+
+    /*left navbar end*/
+
+
+    .partnerArea {
+        padding: 50px 150px 50px 150px;
+    }
+
+    .search {
+        margin-left: -45px;
+    }
+
+    .navigation {
+        width: 290px;
+    }
+
+    .arrow {
+        float: right;
+        padding-right: 10px;
+        padding-top: 4px;
+    }
+}
+
+/*min-width end*/
+
+
+/*max-width*/
+
+@media only screen and (max-width:1266px) {
+    header.light ul.main-nav > li > a {
+        font-size: 14px;
+    }
+
+    ul.main-nav > li {
+        padding: 0;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .social-icons-b {
+        margin: auto;
+        padding-top: 25px;
+    }
+
+    .top__left {
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
+    .top__left-b {
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width:1347px) {
+    header.light ul.main-nav > li > a {
+        font-size: 13px;
+    }
+
+    ul.main-nav > li {
+        padding-top: 14px;
+        padding-bottom: 16px;
+    }
+
+    .top__left {
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
+    .top__left-b {
+        padding-left: 200px;
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width:1199px) {
+    .position {
+        float: left !important;
+    }
+}
+
+@media only screen and (max-width:1185px) {
+    header.light ul.main-nav > li > a {
+        font-size: 14px;
+    }
+
+    .top__left {
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
+    .top__left-b {
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
+    header {
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width:1104px) {
+    header.light ul.main-nav > li > a {
+        font-size: 12px;
+    }
+
+    ul.main-nav > li {
+        padding-top: 14px;
+        padding-bottom: 17px;
+    }
+
+    .top__left {
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
+    .top__left-b {
+        padding-left: 150px;
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width:1015px) {
+
+    ul.main-nav > li {
+        padding: 0;
+    }
+
+    .top__left {
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
+    .top__left-b {
+        padding-left: 85px;
+        padding-bottom: 0px;
+    }
+
+    header {
+        padding-left: 30px;
+    }
+
+    #logo {
+        height: 100px;
+        width: 100px;
+        margin-left: -25px;
+    }
+}
+
+@media only screen and (max-width:991px) {
+
+    .top__right {
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    .bm-alt {
+        margin-top: 40px;
+    }
+
+    .main-title__primary {
+        font-size: 24px;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+
+    .main-title__secondary {
+        font-size: 20px;
+    }
+
+    .page_content {
+        /*margin-bottom: 60px;*/
+        padding: 20px;
+        background-color: #eee;
+    }
+}
+
+@media only screen and (max-width:830px) {
+    #logo {
+        height: 75px;
+        width: 75px;
+        margin-top: 0px;
+    }
+
+    .baslik {
+        font-size: 18px;
+    }
+
+    .baslik2 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:810px) {
+    header {
+        padding-left: 36px;
+    }
+}
+
+@media only screen and (max-width:804px) {
+    ul.main-nav {
+        padding-left: 0px;
+    }
+
+    dl, ol, ul {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    #solmenu ul ul a {
+        color: #fdfdfe;
+        text-decoration: none;
+        background-color: transparent;
+        font-size: 13px;
+    }
+
+    /*    .sub-menu{
+            margin-left: -30px;
+        }*/
+
+    .sub-menu{
+        margin-left: -30px;
+        overflow: hidden;
+        max-height: 0;
+        -webkit-transition: all 0.5s ease-out;
+    }
+
+    /*    .sub-menu:hover{
+            display: block;
+            max-height: 500px;
+        }*/
+
+    .sub-menu-head {
+        /*color: orange;*/
+        color: black;
+    }
+
+    .ic.menu {
+        display: block;
+    }
+
+    header.dark .ic.menu .line {
+        background-color: #fff;
+    }
+
+    header.light .ic.menu .line {
+        background-color: #fff;
+        /*background-color: #fff;*/
+    }
+
+    .ic.menu .line {
+        -webkit-transition: all 0.4s ease 0s;
+        -o-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+        transform-origin: center center;
+    }
+
+    .ic.menu:focus .line {
+        background-color: #373a4b !important;
+    }
+
+    .ic.menu:focus .line:nth-child(1) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .ic.menu:focus .line:nth-child(2) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        margin-top: -10px;
+    }
+
+    .ic.menu:focus .line:nth-child(3) {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+
+    .ic.menu:focus {
+        outline: none;
+    }
+
+    .ic.menu:focus ~ .ic.close {
+        opacity: 1;
+        z-index: 21;
+        outline: none;
+    }
+
+    /*
+  
+  .ic.menu:focus ~ .ic.close { opacity: 1.0; z-index : 21;  }
+  .ic.close:focus { opacity: 0; }
+    */
+    .ic.menu:hover,
+    .ic.menu:focus {
+        opacity: 1;
+    }
+
+
+    nav {
+        background-color: transparent;
+    }
+
+    /* Main Menu for Handheld Devices  */
+    ul.main-nav {
+        z-index: 2;
+        padding: 50px 0;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        width: 0px;
+        background-color: #fff;
+        height: 100%;
+        overflow: auto;
+        /*CSS animation applied : Slide from Right*/
+        -webkit-transition-property: background, width;
+        -moz-transition-property: background, width;
+        -o-transition-property: background, width;
+        transition-property: background, width;
+        -webkit-transition-duration: 0.6s;
+        -moz-transition-duration: 0.6s;
+        -o-transition-duration: 0.6s;
+        transition-duration: 0.6s;
+    }
+
+    .ic.menu:focus ~ .main-nav {
+        width: 300px;
+        background-color: #fff;
+    }
+
+    ul.main-nav > * {
+        -webkit-transition-property: opacity;
+        -moz-transition-property: opacity;
+        -o-transition-property: opacity;
+        transition-property: opacity;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration: 0.4s;
+        -o-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        opacity: 0;
+    }
+
+    .ic.menu:focus ~ .main-nav > * {
+        opacity: 1;
+    }
+
+    ul.main-nav > li > a:after {
+        display: none;
+    }
+
+    ul.main-nav > li:first-child {
+        border-radius: 0px;
+    }
+
+    ul.main-nav > li {
+        display: block;
+        border-bottom: 1px solid #444;
+    }
+
+    ul.main-nav > li > a {
+        font-weight: 600;
+    }
+
+    ul.main-nav > li ul.sub-menu-lists > li a {
+        color: #717175;
+        font-size: 14px;
+    }
+
+    .sub-menu-head {
+        font-size: 16px;
+    }
+
+
+
+    ul.main-nav > li:hover {
+        background-color: transparent;
+    }
+
+    ul.main-nav > li:hover > a {
+        color: #4c4f5d;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .ic.menu:focus ~ ul.main-nav > li > div.sub-menu-block {
+        border-left: 0px solid #ccc;
+        border-right: 0px solid #ccc;
+        border-bottom: 0px solid #ccc;
+        position: relative;
+        visibility: visible;
+        opacity: 1.0;
+    }
+
+    .sub-menu-block {
+        padding: 0 30px;
+    }
+
+    .banners-area {
+        padding-bottom: 0px;
+    }
+
+    .banners-area div {
+        margin-bottom: 15px;
+    }
+
+    .banners-area {
+        border-top: 1px solid #444;
+    }
+
+    #rightBtn {
+        width: 50px;
+        height: 50px;
+        background: url("https://cankaya.edu.tr/img/logo.png") no-repeat;
+        background-size: 50px 50px;
+        position: fixed;
+        top: 5px;
+        left: 5px;
+        z-index: 99;
+        cursor: pointer;
+        border: 0;
+    }
+	
+	#rightLogo {
+		width: 50px;
+		height: 50px;
+		background: url(https://cankaya.edu.tr/img/logo25yil.png) no-repeat;
+		background-size: 50px 50px;
+		position: fixed;
+		top: 10px;
+		right: 70px;
+		z-index: 99;
+		cursor: pointer;
+		border: 0;
+	}
+	
+	#rightLogoEn {
+		width: 50px;
+		height: 50px;
+		background: url(https://cankaya.edu.tr/img/logo25yil_en.png) no-repeat;
+		background-size: 50px 50px;
+		position: fixed;
+		top: 10px;
+		right: 70px;
+		z-index: 99;
+		cursor: pointer;
+		border: 0;
+	}
+
+    #rightNavbar {
+        width: 0px;
+        height: 260px;
+        background-color: #373a4b;
+        line-height: 23px;
+        padding-top: 45px;
+        text-align: left;
+        position: fixed;
+        z-index: 98;
+        top: 5px;
+        left: 0px;
+        font-size: 12px;
+        transition: 0.5s;
+        overflow-x: hidden;
+    }
+
+    #rightNavbar a {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: bold;
+        padding-left: 30px;
+        transition: 0.5s;
+        text-decoration: none;
+    }
+
+    #rightNavbar a:hover {
+        background-color: #4c4f5e;
+    }
+
+    #rightNavbar .closebtn {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 36px;
+        cursor: pointer;
+    }
+
+    #rightNavbar .closebtn:hover {
+        background-color: transparent;
+    }
+
+
+    /*left navbar*/
+
+    #leftNavbar {
+        height: 266px;
+        width: 0px;
+        position: fixed;
+        background-color: #373a4b;
+        line-height: 26px;
+        padding-top: 30px;
+        text-align: left;
+        z-index: 98;
+        top: 110px;
+        left: 0px;
+        transition: 0.5s;
+        overflow-x: hidden;
+    }
+
+    #leftNavbar .leftTitle {
+        padding-left: 30px;
+        color: white;
+        font-weight: bold;
+        font-size: 19px;
+    }
+
+    #leftNavbar a {
+        display: block;
+        color: #fff;
+        font-weight: bold;
+        padding-left: 30px;
+        transition: 0.5s;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    #leftNavbar a:hover {
+        background-color: #4c4f5e;
+    }
+
+    #leftBtn {
+        padding: 3px;
+        width: 25px;
+        height: 29px;
+        position: fixed;
+        top: 64px;
+        left: 18px;
+        z-index: 97;
+        cursor: pointer;
+        border: 0;
+        font-size: 22px;
+        color: #0e0a0f;
+        background-color: #fded01;
+        display: block;
+    }
+
+    #leftNavbar .closebtn {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 36px;
+        cursor: pointer;
+    }
+
+    #leftNavbar .closebtn:hover {
+        background-color: transparent;
+    }
+
+    /*left navbar end*/
+
+    .adayLogo {
+        max-width: 170px;
+    }
+
+    .partnerArea {
+        padding: 0;
+    }
+
+    .search {
+        margin-left: -35px;
+        width: 35px;
+    }
+
+    .search img {
+        margin-left: 10px;
+        width: 35px;
+    }
+
+    .languageBtn img {
+        width: 35px;
+    }
+
+    .card1, .card2 {
+        width: 50%;
+    }
+
+    header {
+        height: 0;
+        padding-left: 30px;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        display: flex !important;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .top__left {
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
+    .navigation {
+        width: 260px;
+    }
+
+    /*.top__left {
+        padding-left: 225px;
+        padding-bottom: 10px;
+    }*/
+
+    .top__left {
+        padding-left: 50px;
+        padding-top: 10px;
+    }
+
+    .top__left-b {
+        padding-left: 180px;
+        padding-bottom: 0px;
+    }
+
+    header.light ul.main-nav > li > a {
+        font-size: 14px;
+    }
+
+    /*.searchInput {
+        background-color: dimgray;
+        color: white;
+        border: 0;
+        border-radius: 50px;
+        width: 250px;
+    }*/
+
+    .arrow {
+        float: right;
+        padding-right: 5px;
+        padding-top: 6px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .searchInput {
+        background-color: dimgray;
+        color: white;
+        border: 0;
+        border-radius: 50px;
+        width: 200px;
+        padding-left: 1rem;
+    }
+
+    .top__right {
+        padding-left: 40px;
+    }
+
+    .top__left {
+        padding: 7px 0 0 0;
+        text-align: center;
+    }
+
+    .top__left-b {
+        padding: 0;
+        text-align: center;
+    }
+
+    .rounded {
+        height: 90px;
+        padding-left: 30px;
+    }
+
+    .dropdown-menu {
+        z-index: 1;
+        width: 100%;
+    }
+
+    #navbar {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:535px) {
+
+    .boxSize2 {
+        width: 50vw;
+        height: 56vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:400px) {
+	#rightLogo {
+		width: 50px;
+		height: 50px;
+		background: url(https://cankaya.edu.tr/img/logo25yil.png) no-repeat;
+		background-size: 50px 50px;
+		position: fixed;
+		top: 60px;
+		left: 5px;
+		z-index: 98;
+		cursor: pointer;
+		border: 0;
+	}
+	
+	#rightLogoEn {
+		width: 50px;
+		height: 50px;
+		background: url(https://cankaya.edu.tr/img/logo25yil_en.png) no-repeat;
+		background-size: 50px 50px;
+		position: fixed;
+		top: 60px;
+		left: 5px;
+		z-index: 98;
+		cursor: pointer;
+		border: 0;
+	}
+}
+
+@media only screen and (max-width:279px) {
+
+    .boxSize {
+        width: 50vw;
+        height: 65vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:280px) and (max-width:398px) {
+
+    .boxSize {
+        width: 33vw;
+        height: 43vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:277px) {
+
+    .boxSize3 {
+        width: 86vw;
+        height: 53vw;
+        overflow: hidden;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .boxSize4 {
+        width: 86vw;
+        height: 53vw;
+        overflow: hidden;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 0;
+        transition: all 0.3s ease-out
+    }
+}
+
+@media only screen and (min-width:278px) and (max-width:479px) {
+
+    .boxSize3 {
+        width: 41vw;
+        height: 29vw;
+        overflow: hidden;
+        cursor: pointer;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width:399px) {
+
+    .boxSize2 {
+        width: 50vw;
+        height: 57vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+/*max-width end*/
+
+/*min-max-width*/
+
+@media only screen and (min-width:992px) and (max-width:1166px) {
+    .boxSize {
+        width: 15vw;
+        height: 19.8vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+/*@media only screen and (min-width:1068px) and (max-width:1142px) {
+    .boxSize {
+        width: 14vw;
+        height: 19.8vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}*/
+
+@media only screen and (min-width:1067px) and (max-width:1142px) {
+    .boxSize {
+        width: 14vw;
+        height: 19vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:1143px) and (max-width:1199px) {
+    .boxSize {
+        width: 13vw;
+        height: 17.1vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+
+    .boxSize2 {
+        width: 20vw;
+        height: 22vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .boxSize3 {
+        width: 229px;
+        height: 143px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .boxSize4 {
+        width: 229px;
+        height: 143px;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 0;
+        transition: all 0.3s ease-out
+    }
+}
+
+@media only screen and (min-width:836px) and (max-width:916px) {
+    header.light ul.main-nav > li > a {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:835px) {
+    header.light ul.main-nav > li > a {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width:819px) and (max-width:991px) {
+    .boxSize2 {
+        width: 18vw;
+        height: 20vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:800px) {
+
+    .boxSize {
+        width: 15vw;
+        height: 20vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:801px) and (max-width:857px) {
+
+    .boxSize {
+        width: 14vw;
+        height: 18vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:858px) and (max-width:991px) {
+
+    .boxSize {
+        width: 12.1vw;
+        height: 16vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+    .boxSize3 {
+        width: 169px;
+        height: 105px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .boxSize4 {
+        width: 169px;
+        height: 105px;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 0;
+        transition: all 0.3s ease-out
+    }
+
+    /*solmenu*/
+
+    #solmenu .sol-menu-baslik a {
+        padding-bottom: 5px;
+        color: white;
+        font-weight: bold;
+        font-size: 23px;
+        cursor: default;
+        text-transform: uppercase;
+    }
+
+    #solmenu .sol-menu-baslik a:hover {
+        background-color: transparent;
+    }
+
+    /*solmenu end*/
+}
+
+@media only screen and (min-width:768px) and (max-width:1065px) {
+    #tumVideolar {
+        width: 160px;
+    }
+
+    .youtube-v1 {
+        height: 250px;
+    }
+
+    .boxImg {
+        width: 122px;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:883px) {
+    .searchInput {
+        background-color: dimgray;
+        color: white;
+        border: 0;
+        border-radius: 50px;
+        width: 250px;
+        height: 49px;
+        padding-left: 1rem;
+    }
+}
+
+@media only screen and (min-width:536px) and (max-width:575px) {
+
+    .boxSize2 {
+        width: 25vw;
+        height: 28vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:319px) {
+
+    .boxSize4 {
+        width: 86vw;
+        height: 53vw;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 0;
+        transition: all 0.3s ease-out
+    }
+
+    .boxOrtala {
+        margin: 0 auto;
+        max-width: 280px;
+        display: flex;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:399px) {
+
+    .boxOrtala {
+        margin: 0 auto;
+        max-width: 290px;
+        display: flex;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:539px) {
+
+    .boxSize4 {
+        width: 188px;
+        height: 117px;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 0;
+        transition: all 0.3s ease-out
+    }
+
+    .boxOrtala {
+        margin: 0 auto;
+        max-width: 370px;
+        display: flex;
+    }
+}
+
+@media only screen and (min-width:540px) and (max-width:675px) {
+
+    .boxSize4 {
+        width: 252px;
+        height: 157px;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 0;
+        transition: all 0.3s ease-out
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:675px) {
+
+    .boxSize2 {
+        width: 20vw;
+        height: 22vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:676px) and (max-width:767px) {
+
+    .boxSize2 {
+        width: 17vw;
+        height: 19vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .boxSize4 {
+        width: 252px;
+        height: 157px;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 0;
+        transition: all 0.3s ease-out
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:818px) {
+
+    .boxSize2 {
+        width: 22vw;
+        height: 24vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:390px) and (max-width:575px) {
+    .boxSize {
+        width: 33vw;
+        height: 43vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:699px) {
+    .boxSize {
+        width: 25vw;
+        height: 33vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:700px) and (max-width:767px) {
+    .boxSize {
+        width: 23vw;
+        height: 30vw;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:539px) {
+
+    .boxSize3 {
+        width: 188px;
+        height: 117px;
+        cursor: pointer;
+        display: inline-block;
+    }
+}
+
+
+@media only screen and (min-width:540px) and (max-width:767px) {
+
+    .boxSize3 {
+        width: 252px;
+        height: 157px;
+        cursor: pointer;
+        display: inline-block;
+    }
+}
+
+/*min-max-width end*/
+
+/*max-height*/
+
+@media only screen and (max-height: 350px) {
+
+    #solmenu {
+        top: 0px;
+        z-index: 999;
+    }
+
+    #leftNavbar {
+        top: 0px;
+        z-index: 100;
+    }
+}
+
+/*max-height end*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*genel*/
+
+.caption #featuredBtn {
+    color: #ffed02;
+    background-color: #4a5056;
+    border-radius: 0;
+    position: absolute;
+    width: 50%;
+    bottom: -30px;
+}
+
+.caption #featuredBtn:hover {
+    color: #ffed02;
+    background-color: #6e7071;
+}
+
+.caption {
+    position: initial;
+}
+
+.caption > h5 {
+    font-weight: bold;
+}
+
+.thumbnail > img, .thumbnail a > img {
+    height: 200px;
+}
+
+
+.pull-right {
+    float: right !important;
+}
+
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.thumbnail > img, .thumbnail a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+#social-menu {
+    background-color: #373a4b;
+    height: 76px;
+    max-height: 76px;
+}
+
+#cookie-consent {
+    padding: 12px;
+    background-color: #f5f3f4;
+    font-weight: 600;
+}
+
+#cookie-consent a {
+    text-decoration: underline;
+    color: black;
+}
+
+#cookie-consent a:hover {
+    color: #ffed02;
+}
+
+.aday {
+    max-height: 55px;
+}
+
+#social-menu .row {
+    min-height: 85px;
+}
+
+#social-menu .social-area {
+    margin-right: 30px !important;
+}
+
+#social-menu .social-area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+#social-menu .social-area li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#social-menu .social-area li a {
+    font-size: 20px;
+    color: #878a9a;
+}
+
+#social-menu .social-area li a:hover {
+    color: #fff;
+}
+
+.border-search {
+    border-color: #ffed00 !important;
+}
+
+#example-search-input {
+    background-color: #4c4f5d;
+    border-color: #4c4f5d;
+}
+
+.partners {
+    cursor: pointer;
+}
+
+.partners img {
+    opacity: 0.4;
+}
+
+.partners:hover img {
+    opacity: 1;
+}
+
+.partners p {
+    font-weight: bold;
+    opacity: 0.4;
+}
+
+.partners:hover p {
+    font-weight: bold;
+    opacity: 1;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.featured {
+    padding: 15px;
+}
+
+.col-centered {
+    margin: 0 auto;
+    float: none;
+    width: auto;
+}
+
+.baslik {
+    margin-bottom: 22px;
+    font-size: 26px;
+    padding-left: 10px;
+    font-weight: 900;
+}
+
+.sd {
+    padding: 0;
+}
+
+.footer-desc {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.footer-desc a {
+    color: #3d455c;
+}
+
+.footer-desc a:hover {
+    color: #fff;
+}
+
+.footer-desc p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.position a {
+    color: #3d455c;
+}
+
+.position a:hover {
+    color: #fff;
+}
+
+.notice-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.notice-content a {
+    color: #4a5056;
+}
+
+.notice-content a:hover {
+    color: #ff7a08;
+}
+
+.notice-content ul {
+    padding-left: 0;
+}
+
+.notice-content li {
+    border-bottom: 2px solid #b3b4b7;
+    list-style: none outside none;
+    padding: 5px;
+}
+
+.carousel-indicators li {
+    width: 30px !important;
+    height: 3px !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 0 !important;
+}
+
+ul.sub-menu-lists {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: block;
+    font-size: 15px;
+}
+
+.column2 h2 {
+    float: none;
+    color: #727582;
+    padding: 2px 5px 2px 5px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.column2 h2:after {
+    background-color: #ffed02;
+    top: 3px;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 0px;
+    position: relative;
+    width: 25%;
+}
+
+.column2 a {
+    float: none;
+    color: #727582;
+    padding: 2px 5px 2px 5px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.column2 a:hover {
+    background-color: #ffed02;
+    color: #464857;
+}
+
+.column2 h5 {
+    color: darkgray;
+}
+
+.social-icons a:hover, .social_footer a:hover {
+    color: #ffed00;
+}
+
+#cankSlider {
+    background-color: #eee;
+}
+
+#cankSlider .page_content {
+    padding: 30px;
+}
+/*genel end*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*Main Title*/
+.main-title {
+    text-align: center;
+    border-bottom: 2px solid #f2e405;
+    background-color: #f5f3f4;
+    padding: 40px 0 40px 0;
+    background: url(../img/cankaya_background.jpg);
+    position: relative;
+    background-position: center;
+    margin-top: 0px;
+    height: 125px;
+}
+
+.container:after {
+    clear: both;
+}
+
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+
+.main-title__primary {
+    margin: 0;
+    color: #363842;
+}
+
+.main-title__secondary {
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-bottom: 0;
+    color: #878a9a;
+    font-weight: bold;
+}
+
+.main-title__secondary::before {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: 50%;
+    margin-left: -15px;
+    height: 3px;
+    width: 30px;
+    background: #f7c51e;
+}
+
+/*Main Title end*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*lightSlider*/
+.lightdemo .item {
+    margin-bottom: 20px;
+}
+
+.lightdemo {
+    width: 100%;
+    height: 250px;
+}
+
+.lightdemo img {
+    width: 360px;
+    height: 200px;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+    .caption #featuredBtn {
+        width: 60%;
+    }
+}
+
+/*solmenu*/
+
+#solmenu .sol-menu-baslik a {
+    padding-bottom: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+#solmenu .sol-menu-baslik a:hover {
+    background-color: transparent;
+    color: white;
+}
+
+#solmenu .sol-alt-menu {
+    display: block;
+}
+
+#solmenu .sol-alt-menu a {
+    padding-left: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+/*solmenu end*/
+
+/*lightSlider end*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#leftNavbar .sol-menu-baslik a {
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+#leftNavbar .sol-menu-baslik a:hover {
+    background-color: transparent;
+}
+
+#leftNavbar .sol-alt-menu {
+    display: block;
+}
+
+#leftNavbar .sol-alt-menu a {
+    padding-left: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.list-unstyled {
+    line-height: 24px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #b7b7b9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.ortala {
+    text-align: center;
+}
+
+/*Boxes with Text*/
+
+.page_content h3 {
+    font-weight: 700;
+}
+
+.card-inverse:hover {
+    opacity: 0.8;
+}
+
+.go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #ffca08;
+    border-radius: 0 4px 0 64px;
+}
+
+.go-arrow {
+    margin-top: -5px;
+    margin-right: -8px;
+    color: white;
+    font-family: courier, sans;
+}
+
+.card1 {
+    display: inline-block;
+    position: relative;
+    background-color: #4c4f5e;
+    border-radius: 4px;
+    /*padding: 74px 12px;*/
+    padding-top: 48px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    margin: 5px;
+    border-radius: 0;
+}
+
+/*.card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    background: #ffca08;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}*/
+
+.card1:hover:before {
+    -webkit-transform: scale(40);
+    transform: scale(40);
+}
+
+.card1:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.card1 h3 {
+    transition: all 0.3s ease-out;
+    color: #fff;
+    font-size: 17px;
+    line-height: 17px;
+}
+
+.card1:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 1200px) {
+    .boxSize4 {
+        width: 180px;
+        height: 120px;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 0;
+        transition: all 0.3s ease-out
+    }
+
+    .iconSize {
+        font-size: 22px;
+    }
+}
+
+
+@media only screen and (max-width: 479px) and (min-width: 278px) {
+    .boxSize4 {
+        width: 41vw;
+        height: 28vw;
+        overflow: hidden;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 0;
+        transition: all 0.3s ease-out
+    }
+
+    .card1 {
+        padding: 20px 20px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .card1 h3 {
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    /*.card1:before {
+            border-radius: 32px;
+        }*/
+
+    .go-corner {
+        width: 27px;
+        height: 27px;
+        top: 0px;
+        right: 0px;
+    }
+
+    .go-arrow {
+        margin-top: -4px;
+    }
+
+    .iconSize {
+        font-size: 18px;
+    }
+}
+
+/*Boxes with Text end*/
+
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+    #solmenu {
+        flex: 0 0 20%;
+        max-width: 20%;
+        line-height: 11px;
+    }
+
+    #cankSlider {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+
+    #solmenu .sol-menu-baslik a {
+        font-size: 13px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    #solmenu a {
+        font-size: 10px;
+        padding-left: 10px;
+    }
+
+    .arrow {
+        padding-right: 10px;
+        padding-top: 4px;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1166px) {
+
+    #solmenu {
+        flex: 0 0 22%;
+        max-width: 22%;
+        line-height: 15px;
+    }
+
+    #cankSlider {
+        flex: 0 0 78%;
+        max-width: 78%;
+    }
+
+    #solmenu .sol-menu-baslik a {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    #solmenu a {
+        font-size: 12px;
+    }
+
+    .arrow {
+        padding-right: 10px;
+        padding-top: 4px;
+    }
+}
+
+@media only screen and (min-width:1167px) and (max-width:1250px) {
+
+    #solmenu {
+        flex: 0 0 20%;
+        max-width: 20%;
+        line-height: 15px;
+    }
+
+    #cankSlider {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+
+    #solmenu .sol-menu-baslik a {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    #solmenu a {
+        font-size: 12px;
+    }
+
+    .arrow {
+        padding-right: 10px;
+        padding-top: 4px;
+    }
+}
+
+@media only screen and (min-width:1251px) and (max-width:1600px) {
+
+    #solmenu {
+        flex: 0 0 20%;
+        max-width: 20%;
+        line-height: 22px;
+    }
+
+    #cankSlider {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+}
+
+@media only screen and (min-width:1601px) {
+
+    #solmenu {
+        flex: 0 0 15%;
+        max-width: 15%;
+        line-height: 22px;
+    }
+
+    #cankSlider {
+        flex: 0 0 85%;
+        max-width: 85%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .caption #featuredBtn {
+        color: #ffed02;
+        background-color: #4a5056;
+        border-radius: 0;
+        position: inherit;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .searchInput {
+        height: 36px;
+        padding-left: 1rem;
+    }
+
+    /*solmenu*/
+
+    #solmenu {
+        height: 266px;
+        width: 0px;
+        position: fixed;
+        background-color: #373a4b;
+        line-height: 26px;
+        padding-top: 30px;
+        text-align: left;
+        z-index: 999;
+        top: 110px;
+        left: 0px;
+        transition: 0.5s;
+        overflow-x: hidden;
+    }
+
+    #solmenu .leftTitle {
+        padding-left: 30px;
+        color: white;
+        font-weight: bold;
+        font-size: 19px;
+    }
+
+    #solmenu .has-sub > a {
+        display: block;
+        color: #fff;
+        font-weight: bold;
+        /*padding-left: 30px;*/
+        transition: 0.5s;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+
+    #solmenu a:hover {
+        background-color: #4c4f5e;
+    }
+
+    #solmenu .closebtn {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 36px;
+        cursor: pointer;
+        color: white;
+    }
+
+    #solmenu .closebtn:hover {
+        background-color: transparent;
+    }
+
+    #leftBtn {
+        padding: 3px;
+        width: 25px;
+        height: 29px;
+        position: fixed;
+        top: 64px;
+        left: 18px;
+        z-index: 97;
+        cursor: pointer;
+        border: 0;
+        font-size: 22px;
+        color: #0e0a0f;
+        background-color: #fded01;
+        display: block;
+    }
+
+    #solmenu .closebtn {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 36px;
+        cursor: pointer;
+        color: white;
+    }
+
+    #solmenu .closebtn:hover {
+        background-color: transparent;
+    }
+
+    #solmenu .closebtn {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 36px;
+        cursor: pointer;
+        color: white;
+    }
+
+    #solmenu .closebtn:hover {
+        background-color: transparent;
+    }
+
+    .sub2menu {
+        list-style: none;
+    }
+
+    .sub2menu a {
+        background-color: transparent;
+        margin-left: -30px;
+    }
+
+    /*solmenu end*/
+}
+
+.detailCard {
+    padding: 15px;
+}
+
+.box-body {
+    padding-top: 15px;
+}
+
+.box-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width:1400px) {
+    .box-img {
+        height: 150px;
+    }
+}
+
+#menu-solmenu{
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.menu-item-type-custom > a{
+    color: #ffffff;
+}
+
+#solmenu > .menu-solmenu-container > ul > li > a {
+    color: #ffffff;
+}
+
+#solmenu > .menu-solmenu-container > ul > li > a:hover, #solmenu > .menu-solmenu-container > ul > li:hover > a {
+    background: #ffed00;
+    color: #373a4b;
+}
+
+.menu-item-type-custom > a:hover{
+    background: #ffed00;
+    color: #373a4b;
+}
+
+.menu-item-has-children > a:after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f061"; 
+    font-weight: 900;
+    float: right;
+    padding-right: 10px;
+}
+
+#solmenu li {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width:769px) {	
+	.cankaya25 {
+		right: 0;
+		position: absolute;
+		z-index: 999;	
+	}
+
+	.cankaya25_en {
+		right: 0;
+		position: absolute;
+		z-index: 999;	
+	}
+}
+
+@media only screen and (min-width:800px) {	
+	.cankaya25 {
+		right: 10px;
+		position: absolute;
+		z-index: 999;	
+	}
+	
+	.cankaya25_en {
+		right: 10px;
+		position: absolute;
+		z-index: 999;	
+	}
+
+}
+
+@media only screen and (min-width:1350px) {	
+	.cankaya25 {
+		right: 30px;
+		position: absolute;
+		z-index: 100;	
+	}
+
+	.cankaya25_en {
+		right: 30px;
+		position: absolute;
+		z-index: 999;	
+	}
+}
+
+@media only screen and (min-width:1500px) {	
+	.cankaya25 {
+		right: 180px;
+		position: absolute;
+		z-index: 100;	
+	}
+	
+	.cankaya25_en {
+		right: 110px;
+		position: absolute;
+		z-index: 999;	
+	}
+}
+
+
+@media only screen and (min-width:1600px) {
+	.cankaya25 {
+		right: 260px;
+		position: absolute;
+		z-index: 100;	
+	}
+	
+	.cankaya25_en {
+		right: 210px;
+		position: absolute;
+		z-index: 999;	
+	}
+}
+
+@media only screen and (min-width:1870px) {	
+	.cankaya25 {
+		right: 550px;
+		position: absolute;
+		z-index: 100;	
+	}
+	
+	.cankaya25_en {
+		right: 500px;
+		position: absolute;
+		z-index: 999;	
+	}
+}

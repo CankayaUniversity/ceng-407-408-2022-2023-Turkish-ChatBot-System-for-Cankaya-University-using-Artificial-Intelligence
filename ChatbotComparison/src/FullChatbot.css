@@ -1,144 +1,118 @@
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 400px;
+  height: 700px;
+  box-sizing: border-box;
+}
 
-  .chatbot-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Updated this line */
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 2rem;
-    border-radius: 5px;
-    width: 400px;
-    height: 700px;
-    box-sizing: border-box;
-  }
-  
-  .chatbot-messages {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    overflow-y: auto;
-    max-height: 500px;
-    width: 100%;
-    background-color: white;
-    border-radius: 5px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .chatbot-message {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-bottom: 0.5rem;
-    max-width: 70%;
-  }
-  
-  .ChatbotContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
+.canvas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 1rem;
+  background-color: #c7bfbf;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 360px;
+  height: 600px;
+  box-sizing: border-box;
+  position: relative;
+  margin-right:20px;
+}
 
-  .message-text {
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    word-wrap: break-word;
-  }
-  
-  .message-time {
-    font-size: 0.75rem;
-    color: #888;
-    margin-top: 0.25rem;
-  }
-  
-  .chatbot-input {
-    display: flex;
-    width: 100%;
-  }
-  
-  .chatbot-input input {
-    flex-grow: 1;
-    border-radius: 5px 0 0 5px;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    outline: none;
-  }
-  
-  .chatbot-input button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-  }
-  
-  .chatbot-input button:hover {
-    background-color: #0056b3;
-  }
-/* Other CSS rules remain the same, add the following new rules */
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 
-.chatbot-input-container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-  
-.bot {
-    /*align-items: flex-start;*/
-    align-self: flex-start;
-  }
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex-grow: 1;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
 
-  .user {
-    align-items: flex-end;
-  }
+.message-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  margin: 10px;
+}
+
+.bot-message .message-text {
+  background-color: #eee;
+  color: #333;
+  align-self: flex-start;
+  padding: 0.5rem;
+}
+
+.user-message .message-text {
+  padding: 0.5rem;
+  max-width: 50%;
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end;
   
-  .message-text {
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    word-wrap: break-word;
-  }
-  
-  .bot .message-text {
-    background-color: #eee;
-    color: #333;
-  }
-  
-  .user .message-text {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .bot .message-time {
-    align-self: flex-start;
-  }
-  
-  .user .message-time {
-    align-self: flex-end;
-  }
-  
-  .title-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .status-text {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  
-  .status-text.online {
-    color: green;
-  }
-  
-  .status-text.offline {
-    color: red;
-  }
-  
-  
+}
+
+.message-time {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 0.25rem;
+}
+
+.bot-message .message-time {
+  align-self: flex-start;
+}
+
+.user-message .message-time {
+  align-self: flex-end;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.input-container input {
+  flex-grow: 1;
+  border-radius: 5px 0 0 5px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.input-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+.close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}

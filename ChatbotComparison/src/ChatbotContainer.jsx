@@ -1,12 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FullChatbot from './FullChatbot';
+import './ChatbotButton.css'; // New CSS for the buttons
 
 const ChatbotContainer = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [model, setModel] = useState("BERT");
+
+  const handleClick = () => setIsVisible(!isVisible);
+  const handleModelChange = () => setModel(model === "BERT" ? "GPT-3" : "BERT");
+
+  const apiUrl = model === "BERT"
+    ? "http://localhost:5000/generate-response-bert"
+    : "http://localhost:5000/generate-response-gpt3";
+
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <FullChatbot title="Model: BERT" apiUrl="http://localhost:5000/generate-response-bert" />
-      <FullChatbot title="Model: GPT-3" apiUrl="http://localhost:5000/generate-response-gpt3" />
-      {/* <FullChatbot title="Model: GPT-4" apiUrl="/generate-response-gpt4" /> */}
+    <div style={{ position: 'fixed', right: '20px', bottom: '20px' }}>
+      {isVisible
+        ? (
+          <>
+            <FullChatbot title={`Model: ${model}`} apiUrl={apiUrl} closeChatbot={handleClick} />
+            <button onClick={handleModelChange}>Switch to {model === "BERT" ? "GPT-3" : "BERT"}</button>
+          </>
+        )
+        : <img src='src/assets/bee.jpg'  width="90" alt='Open chatbot' className='chatbot-button' onClick={handleClick} />
+      }
     </div>
   );
 };

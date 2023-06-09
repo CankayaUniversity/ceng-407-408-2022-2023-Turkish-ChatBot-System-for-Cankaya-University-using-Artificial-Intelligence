@@ -1,13 +1,1158 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+
+<!doctype html>
+<html lang="tr">
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
-  </head>
-  <body>
+    <meta name="google-site-verification" content="t64Oikbu4jkgKhtFqJ6GKgdqoG16NvEZchgnFXL6LCs" />
+    <meta name="msvalidate.01" content="2C392767628B2A5E1E87C0547D1C649C" />
+    <meta name="yandex-verification" content="9d4f085999a3fc23" />
+    <!-- Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3364871-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-3364871-1');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '554221798817305');
+        fbq('track', 'PageView');
+    </script>
+
+    <!-- End Facebook Pixel Code -->
+
+
+    <meta charset="UTF-8">
+    <title>Çankaya Üniversitesi</title>
+    <meta name="keywords" content="Çankaya Üniversitesi,üniversite,vakıf üniversitesi,Çankaya,Cankaya,eğitim,Türkiye Erasmus,Ankara Erasmus,Erasmus,araştırma,bilim,konferans,sempozyum,lisans,yüksek lisans,master,doktora,enstitü,fen bilimleri,sosyal bilimler,kütüphane,bilgi işlem,spor,basketbol,spor kulübü,uluslararası ilişkiler ofisi" />
+
+    <meta name="description" content="Çankaya Üniversitesi Web Sitesi. Sıtkı Alp Eğitim Vakfı tarafından 1997 yılında kurulan Çankaya Üniversitesi 1997-1998 öğretim yılında faaliyetine başlamıştır. Üniversitemiz 5 fakülte,2 enstitü,2 meslek yüksekokulu ve 7 araştırma uygulama merkezi ile hizmet vermektedir." />
+
+    <meta name="author" content="Çankaya Üniversitesi Bilgi İşlem Müdürlüğü" />
+    <meta name="ROBOTS" content="ALL" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    	<!-- meta related -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- vendor css & style files -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Open+Sans:300|Oxygen|Material+Icons"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="mainn.css">
+
+
+
+
+    <link rel="stylesheet" href="font-mavenpro.css">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style2020_2021.css">
+    <link rel="stylesheet" href="cookiealert.css">
+
+    <link href="lightslider.css" rel="stylesheet" />
+
+    <script src='jquery.min.js'></script>
+    <script src='bootstrap.min.js'></script>
+    <script src="fontawesome.js"></script>
+    <script src="script.js"></script>
+
+    <script src="lightslider.js"></script>
+    <script src="carousel-youtube.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.carousel').carousel({
+                interval: 7000
+            })
+        });
+        $(document).ready(function() {
+            $('#duyuru').lightSlider({
+                gallery: false,
+                item: 1,
+                thumbItem: 0,
+                slideMargin: 0,
+                speed: 700,
+                auto: true,
+                loop: true,
+                onSliderLoad: function() {
+                    $('#duyuru').removeClass('cS-hidden');
+                }
+            });
+            $('#haber').lightSlider({
+                gallery: false,
+                item: 1,
+                thumbItem: 0,
+                slideMargin: 0,
+                speed: 800,
+                auto: true,
+                loop: true,
+                onSliderLoad: function() {
+                    $('#haber').removeClass('cS-hidden');
+                }
+            });
+            $('#etkinlik').lightSlider({
+                gallery: false,
+                item: 1,
+                thumbItem: 0,
+                slideMargin: 0,
+                speed: 900,
+                auto: true,
+                loop: true,
+                onSliderLoad: function() {
+                    $('#etkinlik').removeClass('cS-hidden');
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#rightBtn").slideUp(100).delay(500).fadeIn(1000);
+        });
+
+        function showMenu() {
+            if (window.matchMedia('(max-width: 768px)').matches) {
+                document.getElementById('rightNavbar').style.width = '215px';
+            } else if (window.matchMedia('(min-width: 769px)').matches) {
+                document.getElementById('rightNavbar').style.width = '225px';
+            }
+        }
+
+        function closeMenu() {
+            document.getElementById('rightNavbar').style.width = '0px';
+        }
+
+        function scrollFunction() {
+            document.getElementById('rightNavbar').style.width = '0px';
+        }
+    </script>
+
+    <style>
+        .carousel-inner>.item>a>img,
+        .carousel-inner>.item>img,
+        .img-responsive,
+        .thumbnail a>img,
+        .thumbnail>img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        #img-video {
+            background: url("https://cankaya.edu.tr/img/video.png") no-repeat;
+            background-size: cover;
+        }
+
+        #img-video:hover {
+            background: url("https://cankaya.edu.tr/img/video-hover.png") no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body onscroll="scrollFunction()">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <!--<div class="modal fade" id="Modal1" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              
+                <div class="modal-body text-center">
+					<a type="button" class="close" data-dismiss="modal">&times;</a>
+                    <a href="https://onkayit.cankaya.edu.tr/" target="_blank"><img class="img-responsive" src="https://www.cankaya.edu.tr/img/popup-kayit.png" ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+	  <div class="modal fade" id="myModalVideo1" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">                    
+                    <h5 class="modal-title text-center" id="exampleModalLabel">19 MAYIS ATATÜRK'Ü ANMA GENÇLİK VE SPOR BAYRAMI KUTLU OLSUN</h5>
+                    <a type="button" class="close" data-dismiss="modal">&times;</a>
+                </div>
+                <div class="modal-body text-center">
+                    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+					<div class='embed-container'>
+						<video controls autoplay>
+						  <source id="video" src="https://www.cankaya.edu.tr/img/19_Mayis_popup2022.mp4" type="video/mp4">                          
+						  Your browser does not support HTML video.
+						</video>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="modal fade" id="Modal1" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">                    
+                    <h5 class="modal-title text-center" id="exampleModalLabel">ULUSAL STAJ PROGRAMI</h5>
+                    <a type="button" class="close" data-dismiss="modal">&times;</a>
+                </div>
+                <div class="modal-body text-center">
+                    <a href="https://kariyerkapisi.cbiko.gov.tr/" target="_blank"><img class="img-responsive" src="https://www.cankaya.edu.tr/img/ulusal_staj_programi.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="modal fade" id="myModalVideo1" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">                    
+                    <h5 class="modal-title text-center" id="exampleModalLabel">29 Ekim Cumhuriyet Bayramı Kutlu Olsun</h5>
+                    <a type="button" class="close" data-dismiss="modal">&times;</a>
+                </div>
+                <div class="modal-body text-center">
+                    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+					<div class='embed-container'>
+						<video controls autoplay>
+						  <source id="video" src="https://www.cankaya.edu.tr/video/29Ekim2021.mp4" type="video/mp4">                          
+						  Your browser does not support HTML video.
+						</video>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<div class="modal fade" id="Modal2" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">                    
+                    <h5 class="modal-title" id="exampleModalLabel">19 MAYIS ATATÜRK'Ü ANMA GENÇLİK VE SPOR BAYRAMI</h5>
+                    <a type="button" class="close" data-dismiss="modal">&times;</a>
+                </div>
+                <div class="modal-body text-center">
+                    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+					<div class='embed-container'>
+						<div id="player"></div>
+					</div>
+					
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+   
+    <div class="modal fade" id="Modal3" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">                    
+                    <a type="button" class="close" data-dismiss="modal">&times;</a>
+                </div>
+                <div class="modal-body text-center">
+                    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+					<div class='embed-container'>
+						<video controls autoplay>
+						  <source src="https://www.cankaya.edu.tr/img/30agustos2022.mp4" type="video/mp4">                          
+						  Your browser does not support HTML video.
+						</video>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+	<div class="modal fade" id="Modal3" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+			
+                <div class="modal-header">   
+				<h5 class="modal-title" id="exampleModalLabel">Mutlu, Sağlıklı ve Huzurlu Yıllar !</h5>				
+                    <a type="button" class="close" data-dismiss="modal">&times;</a>
+                </div>
+                <div class="modal-body text-center">
+                    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+					<div class='embed-container'>
+						<video controls autoplay>
+						  <source src="https://www.cankaya.edu.tr/img/popup_yilbasi.mp4" type="video/mp4">                          
+						  Your browser does not support HTML video.
+						</video>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="myModalVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio-->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="rightBtn" title="HIZLI MENÜ" onmouseover="showMenu()" onclick="showMenu()"></div>
+    <div id="rightLogo" onclick="window.location.href='https://www.cankaya.edu.tr';"></div>
+    <div id="rightNavbar" onmouseleave="closeMenu()">
+        <a class="closebtn" onclick="closeMenu()">&times;</a>
+        <div style="height:20px"></div>
+        <a href="https://webmail.cankaya.edu.tr/"> WEB MAIL</a>
+        <a href="https://www.cankaya.edu.tr/arama/rehberara.php"> TELEFON REHBERİ</a>
+        <a href="https://sql.cankaya.edu.tr/"> ÖĞRENCİ BİLGİ SİSTEMİ</a>
+        <a href="https://www.cankaya.edu.tr/dersler/index.php"> AÇILAN DERSLER</a>
+        <a href="https://webonline.cankaya.edu.tr/"> UZAKTAN EĞİTİM</a>
+        <a href="https://www.cankaya.edu.tr/kampuste_yasam/index.php"> KAMPÜSTE YAŞAM</a>
+        <a href="http://kutuphane.cankaya.edu.tr/"> KÜTÜPHANE PORTALI</a>
+        <a href="https://www.cankaya.edu.tr/duyuru/servis.php"> ULAŞIM</a>
+    </div>
+
+    <!-- START Bootstrap-Cookie-Alert -->
+    <div class="alert text-center cookiealert" role="alert">
+        <b>Sitemizde size en iyi hizmeti sunabilmek için çerezler kullanılmaktadır. Kullanılan çerezler ve detaylı bilgi için <a href="https://kvkk.cankaya.edu.tr/cerez-politikasi/"> Çerez Politikamızı</a> inceleyebilirsiniz. "Kabul Ediyorum" butonuna tıklayarak ilgili çerez politikamızı kabul etmiş olacaksınız.</b>
+
+        <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+            Kabul Ediyorum
+        </button>
+    </div>
+    <!-- END Bootstrap-Cookie-Alert -->
+
+    <!-- START Bootstrap-Cookie-Alert -->
+    <!-- <div class="alert text-center cookiealert" role="alert">
+        <b>Sitemizde size en iyi hizmeti sunabilmek için çerez kullanılmaktadır. Detaylar için <a href="#">Gizlilik Politikamızı</a> ve <a href="">Çerez Politikamızı</a> inceleyebilirsiniz.</b>
+
+        <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+            Kabul Ediyorum
+        </button>
+    </div> -->
+    <!-- END Bootstrap-Cookie-Alert -->
+
+    <div class="container-fluid" style="background-color: #373a4b!important;">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="top__left">
+                    <a class="nav-link" href="https://liseokulu.cankaya.edu.tr/">
+                        <img class="adayLogo" src="img/aday.png" alt="Lise Okulu">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-centered">
+                <div class="top__right">
+                    <div class="form-inline my-2 my-lg-0">
+                        <div class="input-group">
+                            <div class="social-icons">
+                                <a href="https://www.instagram.com/cankaya_universitesi/" target="_blank" class="fab fa-instagram social"></a>
+                                <a href="https://twitter.com/cankayau" target="_blank" class="fab fa-twitter social"></a>
+                                <a href="https://www.facebook.com/universitycankaya" target="_blank" class="fab fa-facebook social"></a>
+                                <a href="https://www.youtube.com/channel/UC-tjT4BTXFKG62681-EVtIg" target="_blank" class="fab fa-youtube social"></a>
+                                <a href="mailto:webadmin@cankaya.edu.tr" target="_blank" class="fa fa-envelope social"></a>
+                            </div>
+                            <div class="input-group">
+                                <form class="form-inline" role="search" action="https://www.google.com/search">
+                                    <input type=hidden name=domains value="cankaya.edu.tr" />
+                                    <input id=esc type=hidden name=sitesearch value="cankaya.edu.tr" checked>
+                                    <input name="q" class="searchInput" type="text" placeholder="" aria-label="Search" />
+                                    <input class="search" type="image" src="img/btn-search2.png">
+
+                                </form>
+                                <a href="http://www.cankaya.edu.tr/index_en.php" class="languageBtn"><img src="img/en.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="light">
+        <div class="container-fluid">
+            <div class="row">
+                <nav role="navigation">
+                    <a href="javascript:void(0);" class="ic menu" tabindex="1">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="javascript:void(0);" class="ic close"></a>
+                    <a href="https://cankaya.edu.tr/">
+                        <img id="logo" src="img/logo.png" alt="Çankaya Logo">
+                    </a>
+                    <ul class="main-nav">
+                        <li class="top-level-link">
+                            <a class="mega-menu"><span>HAKKIMIZDA</span></a>
+                            <div class="sub-menu-block">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 column">
+                                        <h2 class="sub-menu-head">Üniversite Hakkında</h2>
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="https://www.cankaya.edu.tr/universite/tarihce.php">Tarihçe</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/genelbilgiler.php">Genel Bilgiler</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/dunyasiralamalari.php">Dünya Sıralamaları</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/misyonvizyon.php">Vizyon, Misyon ve Temel Değerler</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/mutevelli.php">Mütevelli Heyeti</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/mutevelli-baskani-mesaji.php">Mütevelli Heyeti Başkanının Mesajı</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/rektor-mesaji.php">Rektörün Mesajı</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/images/Organizasyon_Semasi.jpg">Organizasyon Şeması</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/images/Sayilarla_Cankaya_Universitesi.jpg">Sayılarla Üniversitemiz</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 column">
+                                        <h2 class="sub-menu-head">Üniversite Yönetimi</h2>
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="http://rektorluk.cankaya.edu.tr">Rektörlük</a></li>
+                                            <li><a href="http://rektorluk.cankaya.edu.tr">Rektör Yardımcılıkları</a></li>
+                                            <li><a href="http://genelsekreterlik.cankaya.edu.tr/">Genel Sekreterlik</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/senato.php">Senato Üyeleri</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/ykurulu.php">Üniversite Yönetim Kurulu Üyeleri</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/akademik.php">Akademik Yöneticiler</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/idari.php">İdari Yöneticiler</a></li>
+                                            <li><a href="http://etik.cankaya.edu.tr/">Bilimsel Araştırma ve Yayın Etiği Kurulu</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 column">
+                                        <h2 class="sub-menu-head">Mevzuat</h2>
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="http://kutuphane.cankaya.edu.tr/yonetmelikler/">Yönetmelikler</a></li>
+                                            <li><a href="http://kutuphane.cankaya.edu.tr/yonergeler/">Yönergeler</a></li>
+                                            <li><a href="http://isg.cankaya.edu.tr/">İş Sağlığı ve Güvenliği - Çevre Uygulamaları - Covid 19</a></li>
+                                            <li><a href="http://kalite.cankaya.edu.tr/kisisel-verilerin-korunmasi/">Kişisel Verilerin Korunması Kanunu</a></li>
+                                            <li><a href="http://kalite.cankaya.edu.tr/">Kalite Güvence Sistemi</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="top-level-link">
+                            <a class="mega-menu"><span>AKADEMİK BİRİMLER</span></a>
+                            <div class="sub-menu-block">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 column">
+                                        <h2 class="sub-menu-head"><a href="http://fef.cankaya.edu.tr/">Fen-Edebiyat Fakültesi</a></h2>
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="http://ell.cankaya.edu.tr/">İngiliz Dili ve Edebiyatı Bölümü</a></li>
+                                            <li><a href="http://math.cankaya.edu.tr/">Matematik Bölümü</a></li>
+                                            <li><a href="http://mtb.cankaya.edu.tr/">İngilizce Mütercim ve Tercümanlık Bölümü</a></li>
+                                            <li><a href="http://psy.cankaya.edu.tr/">Psikoloji Bölümü</a></li>
+                                        </ul>
+                                        <br />
+                                        <h2 class="sub-menu-head"><a href="http://iibf.cankaya.edu.tr/">İktisadi ve İdari Bilimler Fakültesi</a></h2>
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="http://bf.cankaya.edu.tr/">Bankacılık ve Finans Bölümü</a></li>
+                                            <li><a href="http://hir.cankaya.edu.tr/">Halkla İlişkiler ve Reklamcılık Bölümü</a></li>
+                                            <li><a href="http://iktisat.cankaya.edu.tr/">İktisat Bölümü</a></li>
+                                            <li><a href="http://man.cankaya.edu.tr/">İşletme Bölümü</a></li>
+                                            <li><a href="http://sbu.cankaya.edu.tr/">Siyaset Bilimi ve Uluslararası İlişkiler Bölümü</a></li>
+                                            <li><a href="http://intt.cankaya.edu.tr/">Uluslararası Ticaret ve Finansman Bölümü</a></li>
+                                            <li><a href="https://mis.cankaya.edu.tr/">Yönetim Bilişim Sistemleri Bölümü</a></li>
+                                        </ul>
+                                        <br />
+                                        <h2 class="sub-menu-head"><a href="http://hukuk.cankaya.edu.tr/">Hukuk Fakültesi</a></h2>
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="http://hukuk.cankaya.edu.tr/">Hukuk</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 column">
+                                        <h2 class="sub-menu-head"><a href="http://mimarlik.cankaya.edu.tr/">Mimarlık Fakültesi</a></h2>
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="http://inar.cankaya.edu.tr/">İç Mimarlık Bölümü</a></li>
+                                            <li><a href="http://arch.cankaya.edu.tr/">Mimarlık Bölümü</a></li>
+                                            <li><a href="http://crp.cankaya.edu.tr/">Şehir ve Bölge Planlama Bölümü</a></li>
+                                        </ul>
+                                        <br />
+                                        <h2 class="sub-menu-head"><a href="http://muhf.cankaya.edu.tr/">Mühendislik Fakültesi</a></h2>
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="http://ceng.cankaya.edu.tr/">Bilgisayar Mühendisliği Bölümü</a></li>
+                                            <li><a href="http://ece.cankaya.edu.tr/">Elektronik ve Haberleşme Mühendisliği Bölümü</a></li>
+                                            <li><a href="http://eee.cankaya.edu.tr/">Elektrik-Elektronik Mühendisliği Bölümü</a></li>
+                                            <li><a href="http://ie.cankaya.edu.tr/index_tr.php">Endüstri Mühendisliği Bölümü</a></li>
+                                            <li><a href="http://ce.cankaya.edu.tr/">İnşaat Mühendisliği Bölümü</a></li>
+                                            <li><a href="http://me.cankaya.edu.tr/">Makine Mühendisliği Bölümü</a></li>
+                                            <li><a href="http://malzeme.cankaya.edu.tr/">Malzeme Bilimi ve Mühendisliği Bölümü</a></li>
+                                            <li><a href="http://mece.cankaya.edu.tr/">Mekatronik Mühendisliği Bölümü</a></li>
+                                            <li><a href="http://yazilim.cankaya.edu.tr/">Yazılım Mühendisliği Bölümü</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 column">
+                                        <h2 class="sub-menu-head"><a href="https://www.cankaya.edu.tr/akademik_birimler/enstituler.php">Enstitüler</a></h2>
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="http://fbe.cankaya.edu.tr/">Fen Bilimleri Enstitüsü</a></li>
+                                            <li><a href="http://sbe.cankaya.edu.tr/">Sosyal Bilimler Enstitüsü</a></li>
+                                        </ul>
+                                        <br />
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="http://adalet.cankaya.edu.tr/">Adalet Meslek Yüksekokulu</a></li>
+                                            <li><a href="http://myo.cankaya.edu.tr/">Çankaya Meslek Yüksekokulu</a></li>
+                                            <li><a href="http://odb.cankaya.edu.tr/">Ortak Dersler Bölümü</a></li>
+                                            <li><a href="http://ydb.cankaya.edu.tr/">Yabancı Diller Bölümü</a></li>
+                                            <li style="padding-top:10px;">
+                                                <a href="https://www.cankaya.edu.tr/akademik_takvim/index.php"><i class="fa fa-calendar-alt" style="font-size:24px;"></i> Akademik Takvim</a>
+                                            </li>
+                                            <li style="padding-top:10px;">
+                                                <a href="https://www.cankaya.edu.tr/yeterlilikler/"><i class="fa fa-align-justify" style="font-size:24px;"></i> Akademik Yeterlilikler</a>
+                                            </li>
+                                            <li style="padding-top:10px;">
+                                                <a href="https://bilgipaketi.cankaya.edu.tr/Home"><i style="font-size: 24px;" class="fa fa-info-circle"></i> Bilgi Paketi</a>
+                                            </li>
+                                            <li style="padding-top:10px;">
+                                                <a href="https://www.cankaya.edu.tr/dersler/"><i style="font-size: 24px;" class="fa fa-folder-open"></i> Açılan Dersler</a>
+                                            </li>
+                                            <li style="padding-top:10px;">
+                                                <a href="https://webonline.cankaya.edu.tr/"><i class="fa fa-laptop" style="font-size:24px;"></i> Webonline</a>
+                                            </li>
+                                            <li style="padding-top:10px;">
+                                                <a href="https://www.cankaya.edu.tr/konfs_ve_semps/index.php"><i class="fa fa-certificate" style="font-size:24px;"></i> Konferanslar</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="top-level-link">
+                            <a class="mega-menu"><span>İDARİ BİRİMLER</span></a>
+                            <div class="sub-menu-block">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 column">
+                                        <h2 class="sub-menu-head">Daire Başkanlıkları</h2>
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="http://bim.cankaya.edu.tr/">Bilgi İşlem Daire Başkanlığı</a></li>
+                                            <li><a href="http://bmidb.cankaya.edu.tr/">Bütçe ve Mali İşler Daire Başkanlığı</a></li>
+                                            <li><a href="http://oim.cankaya.edu.tr/">Öğrenci İşleri Daire Başkanlığı</a></li>
+                                            <li><a href="http://pdb.cankaya.edu.tr/">Personel Daire Başkanlığı</a></li>
+                                            <li><a href="http://tanitimvekulturdairebaskanligi.cankaya.edu.tr/">Tanıtım ve Kültür Daire Başkanlığı</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 column">
+                                        <h2 class="sub-menu-head">Müdürlükler</h2>
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="http://bim.cankaya.edu.tr/">Bilgi İşlem Şube Müdürlüğü</a></li>
+                                            <li><a href="http://bmm.cankaya.edu.tr/">Bütçe ve Muhasebe Müdürlüğü</a></li>
+                                            <li><a href="http://iro.cankaya.edu.tr/">Dış İlişkiler ve Erasmus Müdürlüğü</a></li>
+                                            <li><a href="http://dm.cankaya.edu.tr/">Donatım Müdürlüğü</a></li>
+                                            <li><a href="http://gm.cankaya.edu.tr/">Destek ve Güvenlik Hizmetleri Şube Müdürlüğü</a></li>
+                                            <li><a href="http://kutuphane.cankaya.edu.tr/">Kütüphane Müdürlüğü</a></li>
+                                            <li><a href="http://kultur.cankaya.edu.tr/">Kültürel ve Sosyal İşler Şube Müdürlüğü</a></li>
+                                            <li><a href="http://yurt.cankaya.edu.tr/">Öğrenci Yurtlar Müdürlüğü</a></li>
+                                            <li><a href="http://spor.cankaya.edu.tr/">Spor İşleri Şube Müdürlüğü</a></li>
+                                            <li><a href="http://tanitim.cankaya.edu.tr/">Tanıtım Şube Müdürlüğü</a></li>
+                                            <li><a href="http://ytim.cankaya.edu.tr/">Yapı ve Teknik İşler Müdürlüğü</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 column">
+                                        <h2 class="sub-menu-head">Birimler</h2>
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="https://bap.cankaya.edu.tr/">Bilimsel Araştırma Projeleri Koordinasyon Birimi</a></li>
+                                            <li><a href="http://kultur.cankaya.edu.tr/engelli-ogrenci-birimi/">Engelli Öğrenci Birimi</a></li>
+                                            <li><a href="http://evrak.cankaya.edu.tr/">Evrak-Arşiv Birimi</a></li>
+                                            <li><a href="http://hm.cankaya.edu.tr/">Hukuk Müşavirliği</a></li>
+                                            <li><a href="http://www.mevlana.cankaya.edu.tr/">Mevlana Ofisi Birimi</a></li>
+                                            <li><a href="http://pdrm.cankaya.edu.tr/">Psikolojik Danışma ve Rehberlik Merkezi</a></li>
+                                            <li><a href="http://saglik.cankaya.edu.tr/">Sağlık Merkezi</a></li>
+                                            <li><a href="http://santral.cankaya.edu.tr/">Telefon Santrali</a></li>
+                                            <li><a href="http://www.cankaya.edu.tr/duyuru/servis.php">Ulaşım Hizmetleri Birimi</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="top-level-link">
+                            <a class="mega-menu"><span>ARAŞTIRMA MERKEZLERİ</span></a>
+                            <div class="sub-menu-block">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-12 col-sm-12 column">
+                                        <h2 class="sub-menu-head"><a href="https://www.cankaya.edu.tr/arastirma_merkezleri/index.php">Araştırma Merkezleri</a></h2>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 column">
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="https://acom.cankaya.edu.tr/">Alternatif Uyuşmazlık Çözüm Yolları Uygulama ve Araştırma Merkezi</a></li>
+                                            <li><a href="http://aaum.cankaya.edu.tr/">Atatürk İlkeleri ve İnkılap Tarihi Araştırma ve Uygulama Merkezi </a></li>
+                                            <li><a href="http://hadum.cankaya.edu.tr/">Hukuk Araştırma Danışma ve Uygulama Merkezi</a></li>
+                                            <li><a href="https://ypbmer.cankaya.edu.tr/">Yüksek Performanslı Binalar Uygulama ve Araştırma Merkezi</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 column">
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="http://kadum.cankaya.edu.tr/">Kadın Çalışmaları Uygulama ve Araştırma Merkezi</a></li>
+                                            <li><a href="http://kentmer.cankaya.edu.tr/">Kent, Bölge, Çevre Uygulama ve Araştırma Merkezi</a></li>
+                                            <li><a href="http://sedam.cankaya.edu.tr/">Sürekli Eğitim, Danışma, Araştırma ve Uygulama Merkezi</a></li>
+                                            <li><a href="http://tto.cankaya.edu.tr/">Teknoloji Transfer Ofisi Uygulama ve Araştırma Merkezi</a></li>
+                                            <li><a href="https://uzem.cankaya.edu.tr/">Uzaktan Eğitim Uygulama ve Araştırma Merkezi</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="top-level-link">
+                            <a class="mega-menu"><span>İLETİŞİM</span></a>
+                            <div class="sub-menu-block">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 column">
+                                        <h2 class="sub-menu-head"><a href="https://www.cankaya.edu.tr/universite/iletisim.php">Genel İletişim</a></h2>
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="https://www.cankaya.edu.tr/universite/merkez-kampus-iletisim.php">Merkez Kampüs</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/balgat-kampus-iletisim.php">Balgat Kampüs</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 column">
+                                        <h2 class="sub-menu-head">Birimlerle İletişim</h2>
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="https://www.cankaya.edu.tr/universite/akademik-birimler-iletisim.php">Akademik Birimler İletişim</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/idari-birimler-iletisim.php">İdari Birimler İletişim</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/ogrenci-isleri-iletisim.php">Öğrenci İşleri İletişim</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/tanitim-iletisim.php">Tanıtım Şube Müdürlüğü İletişim</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/kurumsal-iletisim.php">Kurumsal İletişim</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 column">
+                                        <h2 class="sub-menu-head">Elektronik İletişim</h2>
+                                        <ul class="sub-menu-lists">
+                                            <li><a href="https://www.cankaya.edu.tr/universite/sosyal-medya.php">Sosyal Medya</a></li>
+                                            <li><a href="https://www.cankaya.edu.tr/universite/bize-ulasin.php">Bize Ulaşın</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="https://cankaya.edu.tr/">
+                    <img id="logo" src="img/logo25yil.png" alt="Çankaya 25. Yıl Logo" class="cankaya25">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div id="demo" class="carousel slide carousel-fade">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+            <li data-target="#demo" data-slide-to="5"></li>
+            <li data-target="#demo" data-slide-to="6"></li>
+            <li data-target="#demo" data-slide-to="7"></li>
+            <li data-target="#demo" data-slide-to="8"></li>
+            <li data-target="#demo" data-slide-to="9"></li>
+            <li data-target="#demo" data-slide-to="10"></li>
+            <li data-target="#demo" data-slide-to="11"></li>
+            <li data-target="#demo" data-slide-to="12"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+			<div class="carousel-item active">
+                <a href="https://liseokulu.cankaya.edu.tr/" target="_blank"><img class="img-fluid" src="img/slider_liseokulu.jpg" alt="Lise Okulu"></a>
+            </div>	
+			
+            <div class="carousel-item">
+                <a href="https://www.cankaya.edu.tr/duyuru/5575" target="_blank"><img class="img-fluid" src="img/slider_the2023.jpg" alt="The 2023"></a>
+            </div>
+
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/THERanks_2022.jpg" alt="THE Ranks 2022">
+            </div>
+
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/slider_the_muhendislik_2023.jpg" alt="Çankaya Üniversitesi The 2023 Mühendislik Sıralaması">
+            </div>
+			
+            <div class="carousel-item">
+                <a href="https://www.cankaya.edu.tr/akademik_birimler/enstituler.php" target="_blank"><img class="img-fluid" src="img/slider_enst_ogrenci_alimi.jpg" alt="Enstitü Öğrenci Alımı"></a>
+            </div>
+
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/slider-URAP-2022.jpg" alt="URAP">
+            </div>
+
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/slider_urap_2022.jpg" alt="Çankaya üniversitesi Urap 2021-2022 Türk Üniversiteleri Sıralamasında 24., Vakıf Üniversiteleri Sıralamasında 4.">
+            </div>
+
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/slider_tercihiniz_basari_olsun.jpg" alt="Tercihiniz Başarı Olsun">
+            </div>
+		
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/slider_canbee.jpg" alt="Canbee">
+            </div>
+
+            <div class="carousel-item">
+                <a href="https://youtu.be/hQf6rBsaHaE" target="_blank"><img class="img-fluid" src="img/slider_belgesel.jpg" alt="Belgesel"></a>
+            </div>
+
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/slider_the_genc_universite.jpg" alt="Genç Üniversiteler 2022">
+            </div>
+
+            <div class="carousel-item">
+                <a href="https://www.cankaya.edu.tr/duyuru/5061/" target="_blank"><img class="img-fluid" src="img/the_web_slider.jpg" alt="THE Ekonomi 2021"></a>
+            </div>
+
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/slider-the-asia.jpg" alt="The Asia">
+            </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <div style="background-color:#f5f3f4; padding: 50px 0 50px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="input-group">
+
+                    <div id="img-aday" class="boxSize" onclick="location.href='http://aday.cankaya.edu.tr';"></div>
+                    <div id="img-ulus" class="boxSize" onclick="location.href='http://erasmus.cankaya.edu.tr';"></div>
+                    <div id="img-ogris" class="boxSize" onclick="location.href='http://oim.cankaya.edu.tr';"></div>
+                    <div id="img-bilgi" class="boxSize" onclick="location.href='https://sql.cankaya.edu.tr';"></div>
+                    <div id="img-akademik" class="boxSize" onclick="location.href='https://www.cankaya.edu.tr/akademik_takvim/index.php';"></div>
+                    <div id="img-kalite" class="boxSize" onclick="location.href='http://kalite.cankaya.edu.tr';"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color:#ecedef; padding-bottom: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="lightdemo">
+<div class="item">
+<div class="clearfix"><ul id="duyuru"><li><img src="https://cankaya.edu.tr/img/etkinlik_kutu.jpg" /></li><li><img src="https://cankaya.edu.tr/assets/2022-11-16-16-04-13_00406.png" /></li><li><img src="https://cankaya.edu.tr/img/etkinlik_kutu.jpg" /></li><li><img src="https://cankaya.edu.tr/img/etkinlik_kutu.jpg" /></li><li><img src="https://cankaya.edu.tr/img/etkinlik_kutu.jpg" /></li></ul></div>
+</div>
+</div>
+<div class="caption">
+
+            <h5>DUYURULAR</h5>
+            <div class="notice-content"><ul><li><a href="https://fbe.cankaya.edu.tr/basvuru/" target="_top">&Uuml;niversitemiz Fen Bilimleri Enstit&uuml;s&uuml; Doktora Ve Y&uuml;ksek Lisans Programlarına 2022-2023 Akademik Yılı Bahar D&ouml;nemi İ&ccedil;in &Ouml;ğrenci Alımı</a>
+</li><li><a href="http://www.sbe.cankaya.edu.tr/ilan-metni/" target="_top">&Uuml;niversitemiz Sosyal Bilimleri Enstit&uuml;s&uuml; Doktora ve Y&uuml;ksek Lisans Programlarına 2022-2023 Akademik Yılı Bahar D&ouml;nemi İ&ccedil;in &Ouml;ğrenci Alımı</a>
+</li><li><a href="duyuru/5624/Üniversitelerarası_Futsal_Turnuvası_Sona_Erdi.html" target=_parent>Üniversitelerarası Futsal Turnuvası Sona Erdi</a></li><li><a href="duyuru/5625/Üniversitelerarası_Voleybol_Kadın_Müsabakaları_Sona_Erdi.html" target=_parent>Üniversitelerarası Voleybol Kadın Müsabakaları Sona Erdi</a></li><li><a href="duyuru/5626/Üniversitelerarası_Voleybol_Erkek_Müsabakaları_Sona_Erdi.html" target=_parent>Üniversitelerarası Voleybol Erkek Müsabakaları Sona Erdi</a></li></ul>
+</div>
+<a href="https://cankaya.edu.tr/duyuru/" id="featuredBtn" class="btn">TÜMÜNÜ GÖR</a>
+</div>                </div>
+                <div class="col-md-4">
+                    <div class="lightdemo">
+<div class="item">
+<div class="clearfix"><ul id="etkinlik"><li><img src="https://cankaya.edu.tr/assets/2022-10-12-16-42-26_02020.JPG" /></li><li><img src="https://cankaya.edu.tr/assets/2022-11-01-13-36-02_02020.jpg" /></li></ul></div>
+</div>
+</div>
+<div class="caption">
+<h5>HABERLER</h5><div class="notice-content"><ul><li><a href="duyuru/5575/Üniversitemiz_The_Genel_Sıralamasında_Son_4_Yıldır_401-500_Bandında_Yer_Alan_Tek_Türk_Üniversitesi.html" target=_parent>Üniversitemiz The Genel Sıralamasında Son 4 Yıldır 401-500 Bandında Yer Alan Tek Türk Üniversitesi</a></li><li><a href="duyuru/5602/Üniversitemiz_The_(2023)_Mühendislik_Alanında_Dünyada_301-400_Bandında.html" target=_parent>Üniversitemiz The (2023) Mühendislik Alanında Dünyada 301-400 Bandında</a></li></ul>
+</div>
+<a href="https://cankaya.edu.tr/duyuru/haberler.php" id="featuredBtn" class="btn">TÜMÜNÜ GÖR</a>
+</div>                </div>
+                <div class="col-md-4">
+                    <div class="lightdemo">
+                        <div class="item">
+                            <div class="clearfix">
+                                <ul id="haber" style="list-style: none;">
+                                    <li><a href="http://cankaya.edu.tr/takvim/main.php?calendarid=default&view=month"><img src="https://cankaya.edu.tr/img/etkinlikler.png" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caption">
+                        <h5>ETKİNLİK TAKVİMİ</h5>
+                        <div class="notice-content">
+                            		<ul>
+		<li><a href="takvim/main.php?calendarid=default&view=event&eventid=1666859237509" target="_top">İşletme Bölümü Kariyer Seminerleri Dizisi III</a></li><li><a href="takvim/main.php?calendarid=default&view=event&eventid=1672148296781" target="_top">Merkez Kampüs Spor Merkezi'nde Yoga Çalışması </a></li>		</ul>
+		                        </div>
+                        <div>
+                            <a href="http://cankaya.edu.tr/takvim/main.php?calendarid=default&view=month" id="featuredBtn" class="btn">TÜMÜNÜ GÖR</a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="lightdemo">
+						<div class="item">
+							<div class="clearfix">
+								<ul id="haber" style="list-style: none;">
+									<li><a href="http://cankaya.edu.tr/takvim/main.php?calendarid=default&view=month"><img src="https://cankaya.edu.tr/img/etkinlikler.png" /></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="caption">
+						<h5>ETKİNLİK TAKVİMİ</h5>
+						<div class="notice-content">
+							
+						</div>
+						<div>
+							<a href="http://cankaya.edu.tr/takvim/main.php?calendarid=default&view=month" id="featuredBtn" class="btn">TÜMÜNÜ GÖR</a>
+						</div>
+					</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color:#f5f3f4; padding: 50px 0 50px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="input-group">
+
+                    <div id="img-kampus" class="boxSize2" onclick="location.href='https://cankaya.edu.tr/kampuste_yasam/index.php';"></div>
+                    <div id="img-ogrenci" class="boxSize2" onclick="location.href='https://album.cankaya.edu.tr/';"></div>
+                    <div id="img-video" class="boxSize2" onclick="location.href='https://video.cankaya.edu.tr/';"></div>
+                    <div id="img-basin" class="boxSize2" onclick="location.href='http://cankaya.edu.tr/basin.php';"></div>
+                    <div id="img-kutuphane" class="boxSize2" onclick="location.href='http://kutuphane.cankaya.edu.tr';"></div>
+                    <div id="img-yayin" class="boxSize2" onclick="location.href='http://cankaya.edu.tr/yayinlar';"></div>
+                    <div id="img-mezun" class="boxSize2" onclick="location.href='http://mezun.cankaya.edu.tr/';"></div>
+                    <div id="img-store" class="boxSize2" onclick="location.href='http://store.cankaya.edu.tr';"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="color:#3d455c; padding: 50px 0 50px 0;">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="baslik">VİDEOLARLA ÇANKAYA ÜNİVERSİTESİ</h2>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="embed-responsive youtube-v1">
+                        <a href="#" class="d-block video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/PZINOR9YcJY" data-target="#myModalVideo">
+                            <img height="300" src="img/kisa-tarihce.webp" class="img-responsive kisa-tarihce" alt="Kısa Tarihçe" onmouseover="this.src='img/kisa-tarihce-hover.webp'" onmouseout="this.src='img/kisa-tarihce.webp'">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="embed-responsive">
+                        <a href="#" class="d-block video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/80uzWhqLtpI" data-target="#myModalVideo">
+                            <img height="300" src="img/20.yil-belgeseli.webp" class="img-responsive 20.yil-belgeseli" alt="20. Yıl Belgeseli" onmouseover="this.src='img/20.yil-belgeseli-hover.webp'" onmouseout="this.src='img/20.yil-belgeseli.webp'" />
+                        </a>
+                    </div>
+                    <br />
+                    <div class="embed-responsive">
+                        <a href="#" class="d-block video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/DLqHI36wJEA" data-target="#myModalVideo">
+                            <img height="300" src="img/tanitim-filmi.webp" class="img-responsive" alt="Tanıtım Filmi" onmouseover="this.src='img/tanitim-filmi-hover.webp'" onmouseout="this.src='img/tanitim-filmi.webp'" />
+                        </a>
+                    </div>
+                    <br />
+                    <a href="https://www.youtube.com/channel/UC-tjT4BTXFKG62681-EVtIg/videos" target="_blank">
+                        <img id="tumVideolar" src="img/tum_videolar.png" alt="Tüm Videolarımız">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color:#fff">
+        <!--###ecedef-->
+        <div class="container text-center partnerArea">
+            <div class="row">
+                <div class="col-xs-6 col-md-3 partners">
+                    <a href="http://www.tto.cankaya.edu.tr/" target="_blank"><img src="img/tto.jpg" class="img-responsive" style="width:100%" alt="Teknoloji Transfer Ofisi"></a>
+                    <p>Teknoloji Transfer Ofisi</p>
+                </div>
+                <div class="col-xs-6 col-md-3 partners">
+                    <a href="http://sedam.cankaya.edu.tr/" target="_blank"><img src="img/sedam.jpg" class="img-responsive" style="width:100%" alt="Sürekli Eğitim, Danışma, Araştırma ve Uygulama Merkezi"></a>
+                    <p>Sürekli Eğitim, Danışma, Araştırma ve Uygulama Merkezi</p>
+                </div>
+                <div class="col-xs-6 col-md-3 partners">
+                    <a href="http://www.sporkulubu.cankaya.edu.tr/" target="_blank"><img src="img/spor_kulubu.jpg" class="img-responsive" style="width:100%" alt="Çankaya Üniversitesi Spor Kulübü"></a>
+                    <p>Çankaya Üniversitesi Spor Kulübü</p>
+                </div>
+                <div class="col-xs-6 col-md-3 partners">
+                    <a href="https://timeshighereducation.com/" target="_blank"><img src="img/the.jpg" class="img-responsive" style="width:100%" alt="Times Higher Education"></a>
+                    <p>Times Higher Education</p>
+                </div>
+                <div class="col-xs-6 col-md-3 partners">
+                    <a href="https://www.ariokullari.k12.tr/" target="_blank"><img src="img/ozel_ari_okullari.jpg" class="img-responsive" style="width:100%" alt="Özel Arı Okulları"></a>
+                    <p>Özel Arı Okulları</p>
+                </div>
+                <div class="col-xs-6 col-md-3 partners">
+                    <a href="https://www.arisports.com.tr/" target="_blank"><img src="img/ari_tesis.jpg" class="img-responsive" style="width:100%" alt="Arı Spor ve Dinlenme Tesisleri"></a>
+                    <p>Arı Spor ve Dinlenme Tesisleri</p>
+                </div>
+                <div class="col-xs-6 col-md-3 partners">
+                    <a href="http://www.petekkizyurdu.com.tr/" target="_blank"><img src="img/petek.jpg" class="img-responsive" style="width:100%" alt="Petek Kız Öğrenci Evi"></a>
+                    <p>Petek Kız Öğrenci Evi</p>
+                </div>
+                <div class="col-xs-6 col-md-3 partners">
+                    <a href="https://eua.eu/" target="_blank"><img src="img/eua.jpg" class="img-responsive" style="width:100%" alt="European University Association"></a>
+                    <p>European University Association</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="p-5 bg-theme text-small">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
+                            <a href="https://cankaya.edu.tr/">
+                                <img src="img/logo.png" class="logo mb-5" alt="Çankaya Üniversitesi Logo">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3 bottom-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.cankaya.edu.tr/universite/">HAKKIMIZDA</a></li>
+                                <li><a href="https://www.cankaya.edu.tr/akademik_birimler/">AKADEMİK BİRİMLER</a></li>
+                                <li><a href="https://www.cankaya.edu.tr/idari_birimler">İDARİ BİRİMLER</a></li>
+                                <li><a href="https://www.cankaya.edu.tr/arastirma_merkezleri/index.php">ARAŞTIRMA MERKEZLERİ</a></li>
+                                <li><a href="https://www.cankaya.edu.tr/universite/iletisim.php">İLETİŞİM</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 bottom-menu bm-alt">
+                            <h5 class="title">Merkez Kampüs</h5>
+                            <h5>Eskişehir Yolu 29. Km.</h5>
+                            <h5>Yukarıyurtçu Mahallesi</h5>
+                            <h5>Mimar Sinan Caddesi <span class="title">No:</span>4</h5>
+                            <h5>06790, Etimesgut/ANKARA</h5>
+                            <h5><span class="title">Tel:</span><a style="color:#a6a9ba" href="tel:03122331000">0 312 233 10 00</a></h5>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 bottom-menu bm-alt">
+                            <h5 class="title">Balgat Kampüs</h5>
+                            <h5>Çukurambar Mah.</h5>
+                            <h5>Öğretmenler Cad. <span class="title">No:</span>14</h5>
+                            <h5>06530, Çankaya/ANKARA</h5>
+                            <h5><span class="title">Tel:</span><a style="color:#a6a9ba" href="tel:03122844500">0 312 284 45 00</a></h5>
+                            <h5><span class="title">Faks:</span> 0 312 286 40 78</h5>
+                            <a style="color:#373a4b " href="https://gosterkendini.cankaya.edu.tr/">GÖSTER KENDİNİ ANKARA LİSELER ARASI FOTOĞRAF YARIŞMASI (Z kuşağı, perspektif, dijital)</a>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-1">
+                            <a href="https://cankaya.edu.tr/">
+                                <img src="img/logo25yil.png" class="logo mb-5" alt="Çankaya Üniversitesi Logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-12">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 bm-alt sd">
+                            <div class="social_footer">
+                                <a href="https://www.instagram.com/cankaya_universitesi/" target="_blank" class="fab fa-instagram social"></a>
+                                <a href="https://twitter.com/cankayau" target="_blank" class="fab fa-twitter social"></a>
+                                <a href="https://www.facebook.com/universitycankaya" target="_blank" class="fab fa-facebook social"></a>
+                                <a href="https://www.youtube.com/channel/UC-tjT4BTXFKG62681-EVtIg" target="_blank" class="fab fa-youtube social"></a>
+                                <a href="mailto:webadmin@cankaya.edu.tr" class="fa fa-envelope social"></a>
+                            </div>
+                        </div>
+                        <div style="height:100px;"></div>
+                        <div class="col-12 col-sm-12">
+                            <a href="#" title="Başa Dön" style="float:right; font-size:30px; color:#878a9a;" class="fa fa-chevron-up"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+	<!--<div class="container">
+
+		<div class="row padded_row">
+
+			 right side content 
+			<div class="col-md-7">
+
+				<div class="chat_window">
+
+					<div class="top_menu">
+						<div class="title">Çankaya - ChatBot</div>
+					</div>
+
+					 dynamically rendered 
+					<ul class="messages"></ul>
+
+					 input 
+					<div class="bottom_wrapper">
+						<input id="msg_input" placeholder="Sohbet etmek için bir şey sor.." />
+						<div id="send_button" class="app_button_1">Send</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			 left side content
+			<div class="col-md-5">
+				<div class="chat_window">
+				</div>
+			</div>
+
+		</div>
+
+	</div>-->
+
+	<!-- vendor script files -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+	</script>
+
+	<!-- custom scripts -->
+	<script src="main.js"></script>
+
+
+
+
+
+</body>
+
 </html>
+<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+
+<script>
+     $(window).load(function () {
+		$('#Modal3').modal('show');
+     });
+
+    // $(document).ready(function(){   		
+
+    // $("#Modal3").on("hidden.bs.modal",function() 
+    // { 
+		// $(this).find('video')[0].pause();
+		// player.stopVideo();	//Youtube
+		// })
+    // });
+    // $(window).load(function () {
+		// $('#Modal3').modal('show');
+		// $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    // });
+</script>
+
+<script>
+    //// 2
+    //var tag = document.createElement('script');
+    //
+    //tag.src = "https://www.youtube.com/iframe_api";
+    //var firstScriptTag = document.getElementsByTagName('script')[0];
+    //firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    //
+    //// 3
+    //var player;
+    //function onYouTubeIframeAPIReady() {
+    //  player = new YT.Player('player', {
+    //    height: '390',
+    //    width: '640',
+    //    videoId: 'erli8MDH_d4',
+    //    events: {
+    //      'onReady': onPlayerReady,
+    //      //'onStateChange': onPlayerStateChange
+    //    }
+    //  });
+    //}
+    //
+    //// 4
+    //function onPlayerReady(event) {
+    //  event.target.playVideo();
+    //}
+    //
+    //// 5
+    //var done = false;
+    //function onPlayerStateChange(event) {
+    //  if (event.data == YT.PlayerState.PLAYING && !done) {
+    //    setTimeout(stopVideo, 5000);
+    //    done = true;
+    //  }
+    //}
+    //function stopVideo() {
+    //  player.stopVideo();
+    //}
+
+    $(document).ready(function() {
+        var $videoSrc;
+        $('.video-btn').click(function() {
+            $videoSrc = $(this).data("src");
+        });
+
+        $('#myModalVideo').on('shown.bs.modal', function(e) {
+
+            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+        })
+
+        $('#myModalVideo').on('hide.bs.modal', function(e) {
+            $("#video").attr('src', $videoSrc);
+        })
+
+    });
+
+
+    // $(document).ready(function() {
+    // var $videoSrc;  
+    // $('.video-btn').click(function() {
+    // $videoSrc = $(this).data( "src" );
+    // });
+
+    // $('#myModalVideo1').on('shown.bs.modal', function (e) {
+
+    // $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    // })
+
+    // $('#myModalVideo1').on('hide.bs.modal', function (e) {
+    // $(this).find('video')[0].pause();
+    // $("#video").attr('src',$videoSrc); 
+    // }) 
+
+    // });
+</script>
