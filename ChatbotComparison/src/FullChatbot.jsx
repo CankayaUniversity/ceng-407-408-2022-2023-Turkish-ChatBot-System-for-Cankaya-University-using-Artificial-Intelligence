@@ -55,8 +55,9 @@ const FullChatbot = ({ title, apiUrl, closeChatbot }) => {
   return (
     <div className="canvas" style={{ margin: '0 1rem' }}>
       <div className="title-container">
-        <h3>{title}</h3>
-        <img src='src/assets/arrow.svg' width="35" alt='Close chatbot' className='close-button' onClick={closeChatbot} />
+        <h2>BeeBot</h2>
+        <h5>{title}</h5>
+        <img src='src/assets/cross.svg' width="35" alt='Close chatbot' className='close-button' onClick={closeChatbot} />
       </div>
       <div className="messages-container">
         {messages.map((message, index) => (
