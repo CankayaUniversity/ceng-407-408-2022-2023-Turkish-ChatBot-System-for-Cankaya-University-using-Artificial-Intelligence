@@ -9,6 +9,9 @@ from elasticsearch import Elasticsearch
 from elasticsearch.helpers import bulk
 
 
+
+
+
 app = Flask(__name__)
 CORS(app)
 
@@ -23,7 +26,7 @@ nlp = pipeline("question-answering", model=model, tokenizer=tokenizer)
 # Connect to Elasticsearch
 es = Elasticsearch(
     hosts=['https://localhost:9200'],
-    http_auth=('elastic', 'fIs*jD*3To+IpzLP3D+B'),
+    http_auth=('elastic', 'HnfSJ7zFa+-tPBb2bC-J'),
     verify_certs=False
 )
 
@@ -45,7 +48,7 @@ if not es.indices.exists(index=index_name):
 
 # Index the passages
 def index_passages():
-    with open("passage.txt", "r", encoding="utf-8") as f:
+    with open("Datasets/passage.txt", "r", encoding="utf-8") as f:
         passages = f.readlines()
 
     bulk_data = []
