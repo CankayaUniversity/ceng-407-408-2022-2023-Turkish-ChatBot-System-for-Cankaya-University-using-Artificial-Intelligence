@@ -14,7 +14,7 @@ https://t.me/TurkishCankayaChatbot
 
 - You can also ask questions via voice message. 
 
-**Chatbot Comparison:**
+**Cankaya University Web App:**
 
 - Clone Github Repo to your local computer (https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence.git) .
 
@@ -24,9 +24,10 @@ https://t.me/TurkishCankayaChatbot
 
 - Type` npm run dev `on your terminal.
 
-- This command will open your web browser and navigate to the Chatbot Comparison web app.
+- This command will open your web browser and navigate to the Chatbot web app.
 
--  Ask questions and observe the responses to compare the performance of the models.
+-  You can ask questions while browsing the site .
+
 
 ### Usage Examples:
 
@@ -35,14 +36,25 @@ https://t.me/TurkishCankayaChatbot
 [voice message] - Send a voice message to transcribe and receive a text-based answer
 [text message] - Type and send a text-based question to receive an answer
 
-|![image](https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/assets/76754183/4d3b3933-789c-4914-905a-aaddcfd0f5af)|
+|![image](![image](https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/assets/76754183/7d2ad71e-d19b-4ad8-9b31-01c64cd540fd))|
 |:--:| 
 | Figure1: TelegramBot user interface & example usage|
 
-**Chatbot Comparison:**
+**Chatbot Web App:**
 
 [text message] - Type and send a text-based question to receive an answer
 
-|![image](https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/assets/76754183/f3e7f9a0-56c8-4926-a525-97f09ea90f95)|
+|![image](![image](https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/assets/76754183/0444f493-4cea-4b0f-a3a5-a6d45896106f))
+)|
 |:--:| 
 | Figure2: Chatbot classifier user interface & example usage |
+
+**Chatbot Android App:**
+
+[text message] - Type and send a text-based question to receive an answer
+
+|![image](![image](https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/assets/76754183/1d1c87e5-c9e1-4c22-b940-9a009c8ea75c)
+)
+)|
+|:--:| 
+| Figure3: Chatbot Android Application user interface & example usage |
