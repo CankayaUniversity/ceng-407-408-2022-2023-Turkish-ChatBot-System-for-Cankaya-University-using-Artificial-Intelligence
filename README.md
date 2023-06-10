@@ -30,7 +30,7 @@ https://t.me/TurkishCankayaChatbot
 
 **Cankaya University Mobile App:**
 
-- Click the link for download the apk (https://drive.google.com/drive/folders/1VGehmT-DJ5Dh4L5-lgleRiVabBoPGXOi?usp=sharing)
+- Click the link for download the apk (SOON)
 
 ### Usage Examples:
 
