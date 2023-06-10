@@ -8,8 +8,8 @@ import java.io.IOException
 
 class GPT3Api {
     private val client = OkHttpClient()
-    private val apiKey = "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"
-    private val model = "davinci:ft-personal-2023-06-04-20-22-24"
+    private val apiKey = "write the gpt3 api key here"
+    private val model = "write trained model name here"
 
     fun getGPT3Response(inputText: String, callback: (String) -> Unit) {
         val url = "https://api.openai.com/v1/engines/$model/completions"
@@ -21,7 +21,8 @@ class GPT3Api {
             .put("top_p", 1.0)
             .put("frequency_penalty", 0.0)
             .put("presence_penalty", 0.0)
-            .put("stop", JSONArray().put("."))
+            .put("stop", JSONArray().put("\n",))
+            .put("stop", JSONArray().put(". ",))
 
         val request = Request.Builder()
             .url(url)

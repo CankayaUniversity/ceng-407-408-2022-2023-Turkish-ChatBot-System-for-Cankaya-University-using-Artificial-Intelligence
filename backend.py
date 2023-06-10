@@ -16,7 +16,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Set up GPT-3
-openai.api_key = "SECRET" 
+openai.api_key = "write Openai api key here"
 
 # Set up BERT
 tokenizer = AutoTokenizer.from_pretrained("savasy/bert-base-turkish-squad")
@@ -26,7 +26,7 @@ nlp = pipeline("question-answering", model=model, tokenizer=tokenizer)
 # Connect to Elasticsearch
 es = Elasticsearch(
     hosts=['https://localhost:9200'],
-    http_auth=('elastic', 'HnfSJ7zFa+-tPBb2bC-J'),
+    http_auth=('elastic', 'write elastic password here'),
     verify_certs=False
 )
 
@@ -83,7 +83,7 @@ def get_gpt3_response():
     print(message)
     try:
         response = openai.Completion.create(
-          model="SECRET", 
+          model="write trained gpt3 model name here", 
           prompt=message,
           temperature=0.0,
           max_tokens=150,
@@ -91,7 +91,7 @@ def get_gpt3_response():
           best_of=3,
           frequency_penalty=0.0,
           presence_penalty=0.0,
-          stop=['.']
+          stop=['. ',"\n"]
         )
 
         return jsonify({"text": response.choices[0].text.strip()})

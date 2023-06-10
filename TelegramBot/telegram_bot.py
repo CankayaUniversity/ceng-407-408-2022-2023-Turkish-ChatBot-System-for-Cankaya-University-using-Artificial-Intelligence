@@ -3,10 +3,10 @@
 import requests
 import logging
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext, CallbackQueryHandler
+from telegram.ext import Updater, Filters, CommandHandler, MessageHandler, CallbackContext, CallbackQueryHandler
 
 # Set your bot token here
-BOT_TOKEN = "Set your bot token here"
+BOT_TOKEN = "write bot token"
 BACKEND_URL = "http://localhost:5000"  # Replace with your backend URL if needed
 
 LOGIN_FEATURE = 0 # Set to 1 to enable login, set to 0 to disable login
@@ -19,7 +19,7 @@ import io
 from google.oauth2 import service_account
 
 # Set the path to your Google Cloud key file
-GOOGLE_APPLICATION_CREDENTIALS = "google_cloud_api.json"
+GOOGLE_APPLICATION_CREDENTIALS = "TelegramBot/google_cloud_api.json"
 
 def transcribe_audio_file(file_path):
     # Convert audio file to 16-bit samples
@@ -58,6 +58,8 @@ def transcribe_audio_file(file_path):
 import os
 import tempfile
 from pydub import AudioSegment
+import pydub
+pydub.AudioSegment.ffmpeg = "path/to/ffmpeg"
 
 def process_audio(update: Update, context: CallbackContext):
     if LOGIN_FEATURE and ("authenticated" not in context.user_data or not context.user_data["authenticated"]):
