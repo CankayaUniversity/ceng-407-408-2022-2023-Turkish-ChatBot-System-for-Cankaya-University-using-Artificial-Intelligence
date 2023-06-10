@@ -30,7 +30,7 @@ https://t.me/TurkishCankayaChatbot
 
 **Cankaya University Mobile App:**
 
-- Click the link for download the apk (SOON)
+- Click the link for download the apk (https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/blob/main/CankayaChatBotApp/app-debug.apk)
 
 ### Usage Examples:
 
