@@ -28,6 +28,9 @@ https://t.me/TurkishCankayaChatbot
 
 -  You can ask questions while browsing the site .
 
+**Cankaya University Mobile App:**
+
+- Click the link for download the apk (https://drive.google.com/drive/folders/1VGehmT-DJ5Dh4L5-lgleRiVabBoPGXOi?usp=sharing)
 
 ### Usage Examples:
 
