@@ -36,7 +36,7 @@ https://t.me/TurkishCankayaChatbot
 [voice message] - Send a voice message to transcribe and receive a text-based answer
 [text message] - Type and send a text-based question to receive an answer
 
-|![image](![image](https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/assets/76754183/7d2ad71e-d19b-4ad8-9b31-01c64cd540fd))|
+|![image](https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/assets/76754183/06db54ee-b879-465a-9593-b12b4e3bf814)|
 |:--:| 
 | Figure1: TelegramBot user interface & example usage|
 
@@ -44,8 +44,7 @@ https://t.me/TurkishCankayaChatbot
 
 [text message] - Type and send a text-based question to receive an answer
 
-|![image](![image](https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/assets/76754183/0444f493-4cea-4b0f-a3a5-a6d45896106f))
-)|
+|![maaaa2](https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/assets/76754183/0210e0ca-436e-4a56-9130-e0a38ca8cb7d)|
 |:--:| 
 | Figure2: Chatbot classifier user interface & example usage |
 
@@ -53,8 +52,6 @@ https://t.me/TurkishCankayaChatbot
 
 [text message] - Type and send a text-based question to receive an answer
 
-|![image](![image](https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/assets/76754183/1d1c87e5-c9e1-4c22-b940-9a009c8ea75c)
-)
-)|
+|![chat](https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/assets/76754183/51ace9f4-d6ab-46cd-bafb-82dbdbb83881)|
 |:--:| 
 | Figure3: Chatbot Android Application user interface & example usage |
