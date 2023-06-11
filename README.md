@@ -3,6 +3,16 @@ Turkish ChatBot System for Cankaya University using Artificial Intelligence
 
 ### Installation Instructions:
 
+**GPT3 MODEL AND BERT MODEL**
+
+- If you want to use ChatbotTelegramBot, ChatbotAnroidApp and ChatbotWebApp you must run backend.py first.
+
+- For GPT3 Model, ask contributors for OpenAI key. (openai.api_key = "write Openai api key here")
+
+- For Bert Model, you should download Elasticsearch first. Download here : https://www.elastic.co/downloads/elasticsearch 
+After downloading Elasticsearch, a zip file named elasticsearch-8.8.1-windows-x86_64 will download to your computer. Extract this zip file to the directory in your folder where you are sure that you have more than 64GB free space on your computer. Go to this folder on your computer and run bin/elasticsearch.batch file respectively (Example: C:\Users\Hpi5-9\elasticsearch-8.8.1\bin). After running this file, Elasticsearch will start to install on your computer and you will be able to see your password in the window that opens. After copying your password, enter your password instead of the password in the backend.py file ( http_auth=('elastic', 'write elastic password here'),).
+
+  
 **Chatbot Telegram Bot:**
 
 - Visit the Telegram app on your device.
