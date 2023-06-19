@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         gpt3Api = GPT3Api()
 
-        appendToChat("", "Merhaba Hoşgeldiniz! size nasıl yardımcı olabilirim?")
+        appendToChat("", "Merhaba Hoşgeldiniz! size nasıl yardımcı olabilirim.")
 
         binding.buttonSend.setOnClickListener {
             val userInput = binding.etUserInput.text.toString().trim()
@@ -62,7 +62,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun appendToChat(userInput: String, response: String) {
 
-        if (response != "") {
+        if (response.contains("?")) {
+            val newItem = Message(userInput, "ne dediğinizi anlamadım!")
+            val newList = adapter.item.toMutableList()
+            newList.add(newItem)
+            adapter.item = newList
+            adapter.notifyDataSetChanged()
+        } else if (response == "") {
+
+        }else{
             val newItem = Message(userInput, response)
             val newList = adapter.item.toMutableList()
             newList.add(newItem)
@@ -74,8 +82,8 @@ class MainActivity : AppCompatActivity() {
     private fun writeToTextFile(userInput: String, response: String, check: Boolean) {
         val blank = "\n\n"
         val blank2 = ", "
-        val userInputInfo="UserInput==> "
-        val ResponseInfo="Response==> "
+        val userInputInfo = "UserInput==> "
+        val ResponseInfo = "Response==> "
 
         fileOutputStream.write(userInputInfo.toByteArray())
         fileOutputStream.write(userInput.toByteArray())

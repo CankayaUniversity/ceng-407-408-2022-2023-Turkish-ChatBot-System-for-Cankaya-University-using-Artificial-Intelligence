@@ -32,7 +32,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:textSize="15sp"
+            android:fontFamily="@font/arima"
+            android:textSize="16sp"
             android:textStyle="bold"
             tools:text="title" />
 
@@ -77,8 +78,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:fontFamily="@font/arima"
             android:layout_marginTop="10dp"
-            android:textSize="15sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             tools:text="title" />
 
