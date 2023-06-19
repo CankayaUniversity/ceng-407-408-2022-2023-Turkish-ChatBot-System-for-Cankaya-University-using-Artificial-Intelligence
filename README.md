@@ -5,9 +5,9 @@ Turkish ChatBot System for Cankaya University using Artificial Intelligence
 
 **GPT3 MODEL AND BERT MODEL**
 
-- If you want to use ChatbotTelegramBot, ChatbotAnroidApp and ChatbotWebApp you must run backend.py first.
+- If you want to use ChatbotTelegramBot and ChatbotWebApp you must run backend.py first.
 
-- For GPT3 Model, ask contributors for OpenAI key. (openai.api_key = "write Openai api key here")
+- For GPT3 Model, ask contributors for OpenAI key(openai.api_key = "write Openai api key here"), and set the your model in here(model="write trained gpt3 model name here")
 
 - For Bert Model, you should download Elasticsearch first. Download here : https://www.elastic.co/downloads/elasticsearch 
 After downloading Elasticsearch, a zip file named elasticsearch-8.8.1-windows-x86_64 will download to your computer. Extract this zip file to the directory in your folder where you are sure that you have more than 64GB free space on your computer. Go to this folder on your computer and run bin/elasticsearch.batch file respectively (Example: C:\Users\Hpi5-9\elasticsearch-8.8.1\bin). After running this file, Elasticsearch will start to install on your computer and you will be able to see your password in the window that opens. After copying your password, enter your password instead of the password in the backend.py file ( http_auth=('elastic', 'write elastic password here'),). !!!Do not close batch file while running backend.py.
@@ -65,6 +65,6 @@ https://t.me/TurkishCankayaChatbot
 
 [text message] - Type and send a text-based question to receive an answer
 
-|![chat](https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/assets/76754183/51ace9f4-d6ab-46cd-bafb-82dbdbb83881)|
+|![chat](https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/assets/90690325/a0c7257c-84ab-4ab5-9405-252568c76833)|
 |:--:| 
 | Figure3: Chatbot Android Application user interface & example usage |

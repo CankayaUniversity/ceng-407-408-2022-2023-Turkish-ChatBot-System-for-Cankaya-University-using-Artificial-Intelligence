@@ -14,6 +14,7 @@ const FullChatbot = ({ title, apiUrl, closeChatbot }) => {
       isBot: true,
     },
   ]);
+  
   const messagesEndRef = useRef(null);
 
   const handleSubmit = async (e) => {
@@ -54,9 +55,14 @@ const FullChatbot = ({ title, apiUrl, closeChatbot }) => {
 
   return (
     <div className="canvas" style={{ margin: '0 1rem' }}>
+      <img 
+        src='src/assets/cankaya-universitesi-logo.svg' 
+        alt='Centered SVG'
+        className='centered-svg' 
+      />
       <div className="title-container">
         <h2>BeeBot</h2>
-        <h5>{title}</h5>
+        {/* <h5>{title}</h5> */}
         <img src='src/assets/cross.svg' width="35" alt='Close chatbot' className='close-button' onClick={closeChatbot} />
       </div>
       <div className="messages-container">
