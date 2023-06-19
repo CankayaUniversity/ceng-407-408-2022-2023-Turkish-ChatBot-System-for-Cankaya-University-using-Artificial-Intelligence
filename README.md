@@ -65,6 +65,6 @@ https://t.me/TurkishCankayaChatbot
 
 [text message] - Type and send a text-based question to receive an answer
 
-|![chat](https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/assets/76754183/51ace9f4-d6ab-46cd-bafb-82dbdbb83881)|
+|![chat](https://github.com/CankayaUniversity/ceng-407-408-2022-2023-Turkish-ChatBot-System-for-Cankaya-University-using-Artificial-Intelligence/assets/90690325/a0c7257c-84ab-4ab5-9405-252568c76833)|
 |:--:| 
 | Figure3: Chatbot Android Application user interface & example usage |
