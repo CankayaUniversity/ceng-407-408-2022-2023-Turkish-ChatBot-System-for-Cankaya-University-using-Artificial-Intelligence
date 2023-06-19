@@ -54,11 +54,12 @@
   from { transform: translateX(100%); }
   to   { transform: translateX(0); }
 }
+
 .chat-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
   width: 60px;
   height: 60px;
-  cursor: pointer;
+  cursor: pointer; 
 }

@@ -10,14 +10,14 @@
   height: 700px;
   box-sizing: border-box;
 }
-
 .canvas {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0 1rem;
-  background-color: #ebe154;
-  padding: 2rem;
+  background-color: #FDFA00; /* Yellow Background */
+  padding: 0.1rem;
   border-radius: 5px;
   width: 360px;
   height: 600px;
@@ -29,11 +29,14 @@
 .title-container {
   display: flex;
   justify-content: space-between;
+  padding-left: 3%; /* BeeBot left padding */
   align-items: center;
   width: 100%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif /* BeeBot Font */
 }
 
 .messages-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -42,9 +45,19 @@
   background-color: white;
   border-radius: 5px;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: -1rem;/* Chatbot Bottom */
+  z-index: 0;
 }
-
+.centered-svg { /* Arkaplan Çankaya Logosu */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  height: 340px;
+  opacity: 0.05;
+  z-index: 1;
+}
 .message-container {
   display: flex;
   flex-direction: column;
@@ -64,8 +77,7 @@
   max-width: 50%;
   background-color: #007bff;
   color: white;
-  align-self: flex-end;
-  
+  align-self: flex-end; 
 }
 
 .message-time {
